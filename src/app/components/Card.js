@@ -12,8 +12,8 @@ const Card = ({ title, backgroundImage, buttonText, imgTop }) => {
     // className={styles.card}
     className="relative flex flex-col justify-between w-full m-3 h-72 overflow-hidden border-2 border-transparent rounded-lg text-center text-white transition border-opacity-0 hover:border-opacity-100"
     >
-      <Image
-        src={backgroundImage}
+      <div
+        // src={backgroundImage}
         alt={title}
         layout="fill"
         objectFit='cover'
@@ -21,7 +21,11 @@ const Card = ({ title, backgroundImage, buttonText, imgTop }) => {
         className="absolute top-0 left-0 w-full h-full z-10 "
         style={{
             maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%)',
-            maskSize: 'cover'
+            maskSize: 'cover',
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
         }}
       />
       <h2 className={`relative z-20 p-2 mt-auto text-3xl  font-semibold ${bebas_Neue.className}`}

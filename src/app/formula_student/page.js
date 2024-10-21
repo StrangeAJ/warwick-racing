@@ -108,7 +108,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="/landing.png" title="FORMULA STUDENT" />
+        <BannerSection backgroundImage="landing.png" title="FORMULA STUDENT" />
         <HeroSection
           id="About"
           title="ABOUT FORMULA STUDENT"
@@ -134,7 +134,7 @@ The winner is not necessarily the team with the fastest car, but the one with th
         </div>
 
         <HeroSection
-          backgroundUrl="/car.jpg"
+          backgroundUrl="car.jpg"
           title="FOLLOW IN TO KNOW MORE"
           titleColor="[#43B02A]"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
