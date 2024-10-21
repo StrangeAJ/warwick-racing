@@ -13,7 +13,7 @@ export default function Home() {
     const sponsors = [
         {
           title: "WMG",
-          backgroundImage: "/Sponsors_Logo/WMG.png"
+          backgroundImage: "Sponsors_Logo/WMG.png"
         },
         {
           title: "Sponsor 2",
@@ -57,7 +57,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="/landing.png" title="SPONSORS" />
+        <BannerSection backgroundImage="landing.png" title="SPONSORS" />
         
         <div className="flex justify-center items-center flex-wrap">
               {sponsors.map((card, index) => (
