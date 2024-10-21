@@ -14,19 +14,19 @@ export default function Home() {
     const teams = [
         {
           title: "Operations",
-          backgroundImage: "/Teams/operations.jpg"
+          backgroundImage: "Teams/operations.jpg"
         },
         {
           title: "Technical",
-          backgroundImage: "/Teams/technical.jpg",
+          backgroundImage: "Teams/technical.jpg",
         },
         {
           title: "Drivers",
-          backgroundImage: "/Teams/drivers.jpg",
+          backgroundImage: "Teams/drivers.jpg",
         },
         {
             title:"Core",
-            backgroundImage:"/Teams/core.jpg"
+            backgroundImage:"Teams/core.jpg"
         }
       ];
 
@@ -35,7 +35,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="/about_us.png" title="OUR TEAM" />
+        <BannerSection backgroundImage="about_us.png" title="OUR TEAM" />
         
         <div className="flex justify-center items-center flex-wrap">
               {teams.map((card, index) => (
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
 
         <HeroSection
-        backgroundUrl="/car.jpg"
+        backgroundUrl="car.jpg"
         title="FOLLOW IN TO KNOW MORE"
         titleColor="[#43B02A]" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
