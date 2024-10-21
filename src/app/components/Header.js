@@ -36,7 +36,16 @@ const Header = () => {
       <div className="flex justify-between items-center">
         {/* Logo on the left */}
         <div className="logo">
-          <Image src="/logo.png" alt="Warwick Racing" width={100} height={36} />
+          <div src="/logo.png" alt="Warwick Racing" 
+          style={{
+            backgroundImage: "url('logo.png')",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            width: "100px",
+            height: "36px"
+          }}
+          />
         </div>
 
         {/* Navigation menu (centered on desktop) */}
