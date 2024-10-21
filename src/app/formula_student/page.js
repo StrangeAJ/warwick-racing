@@ -31,17 +31,17 @@ export default function Home() {
   const cardsStatics = [
     {
       title: "BUSINESS PLANNING",
-      backgroundImage: "/business_planning.jpg",
+      backgroundImage: "business_planning.jpg",
       buttonText: "75 Pt.",
     },
     {
       title: "COST AND MANUFACTURING",
-      backgroundImage: "/cost_and_manufacturing.jpg",
+      backgroundImage: "cost_and_manufacturing.jpg",
       buttonText: "100 Pt.",
     },
     {
       title: "ENGINEERING DESIGN",
-      backgroundImage: "/engineer_design.jpg",
+      backgroundImage: "engineer_design.jpg",
       buttonText: "150 Pt.",
     },
   ];
@@ -49,22 +49,22 @@ export default function Home() {
   const cardsDynamics = [
     {
       title: "ACCELERATIION",
-      backgroundImage: "/business_planning.jpg",
+      backgroundImage: "business_planning.jpg",
       buttonText: "75 Pt.",
     },
     {
       title: "SKIDPAD",
-      backgroundImage: "/cost_and_manufacturing.jpg",
+      backgroundImage: "cost_and_manufacturing.jpg",
       buttonText: "75 Pt.",
     },
     {
       title: "ENDURANCE",
-      backgroundImage: "/engineer_design.jpg",
+      backgroundImage: "engineer_design.jpg",
       buttonText: "325 Pt.",
     },
     {
       title: "EFFICIENCY",
-      backgroundImage: "/business_planning.jpg",
+      backgroundImage: "business_planning.jpg",
       buttonText: "100 Pt.",
     },
   ];
