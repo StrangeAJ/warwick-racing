@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         <HeroSection
-        backgroundUrl="/car.jpg"
+        backgroundUrl="car.jpg"
         title="FOLLOW IN TO KNOW MORE"
         titleColor="[#43B02A]" 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."

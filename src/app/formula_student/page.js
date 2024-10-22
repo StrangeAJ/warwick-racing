@@ -133,15 +133,6 @@ The winner is not necessarily the team with the fastest car, but the one with th
           <FAQ faqData={FAQStat} />
         </div>
 
-        <HeroSection
-          backgroundUrl="car.jpg"
-          title="FOLLOW IN TO KNOW MORE"
-          titleColor="[#43B02A]"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
-          buttonText="REGISTER NOW FOR TOUR"
-          contentCentered
-        />
-
         <ContentSection
           id="Competition"
           title={"THE COMPETITION"}
@@ -187,6 +178,16 @@ The winner is not necessarily the team with the fastest car, but the one with th
             </div>
           </div>
         </ContentSection>
+        
+        <HeroSection
+          backgroundUrl="car.jpg"
+          title="FOLLOW IN TO KNOW MORE"
+          titleColor="[#43B02A]"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
+          buttonText="REGISTER NOW FOR TOUR"
+          contentCentered
+        />
+        
       </div>
     </>
   );
