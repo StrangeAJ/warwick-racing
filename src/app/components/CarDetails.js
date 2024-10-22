@@ -131,7 +131,7 @@ const CarDetails = ({ car, reverse }) => {
             <h2 className={`text-4xl font-${bebas_neue}`}>Images</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
               {car.Images.map((image, index) => (
-                <img
+                <Image
                   key={index}
                   src={image}
                   className="w-full h-64 object-cover rounded-lg"
