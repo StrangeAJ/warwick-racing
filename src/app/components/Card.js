@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from './Card.module.css';
 import { Bebas_Neue } from 'next/font/google';
 
 const bebas_Neue = Bebas_Neue({
