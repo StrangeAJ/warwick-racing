@@ -22,7 +22,7 @@ const Card = ({ title, backgroundImage, buttonText, imgTop, isContain }) => {
             maskSize: 'cover',
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: `${isContain?'contain' : 'cover'}`,
-            backgroundPosition: 'center',
+            backgroundPosition: `${imgTop?'top' : 'center'}`,
             backgroundRepeat: 'no-repeat',
         }}
       />
