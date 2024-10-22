@@ -6,7 +6,7 @@ const bebas_Neue = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
 });
-const Card = ({ title, backgroundImage, buttonText, imgTop }) => {
+const Card = ({ title, backgroundImage, buttonText, imgTop, isContain }) => {
   return (
     <div 
     // className={styles.card}
@@ -16,14 +16,13 @@ const Card = ({ title, backgroundImage, buttonText, imgTop }) => {
         // src={backgroundImage}
         alt={title}
         layout="fill"
-        objectFit='cover'
         objectPosition= {imgTop ? 'top' : 'center'}
         className="absolute top-0 left-0 w-full h-full z-10 "
         style={{
             maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%)',
             maskSize: 'cover',
             backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: 'cover',
+            backgroundSize: `${isContain?'contain' : 'cover'}`,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}

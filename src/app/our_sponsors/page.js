@@ -11,45 +11,56 @@ const bebas_Neue = Bebas_Neue({
 });
 export default function Home() {
     const sponsors = [
+      // EPlan
+      // About Energy
         {
           title: "WMG",
           backgroundImage: "Sponsors_Logo/WMG.png"
         },
         {
-          title: "Sponsor 2",
-          backgroundImage: "/sponsor2.jpg",
-          buttonText: "75 Pt.",
+          title: "Open BOM",
+          backgroundImage: "Sponsors_Logo/Openbom.png"
         },
         {
-          title: "Sponsor 3",
-          backgroundImage: "/sponsor3.jpg",
-          buttonText: "75 Pt.",
+          title: "Vector",
+          backgroundImage: "Sponsors_Logo/Vector.png"
         },
         {
-          title: "Sponsor 4",
-          backgroundImage: "/sponsor4.jpg",
-          buttonText: "75 Pt.",
+          title: "Eurocircuits",
+          backgroundImage: "Sponsors_Logo/Eurocircuits.png"
+        },
+        // WR Composites
+        {
+          title: "Rapid Harness",
+          backgroundImage: "Sponsors_Logo/RapidHarness.png"
         },
         {
-          title: "Sponsor 5",
-          backgroundImage: "/sponsor5.jpg",
-          buttonText: "75 Pt.",
+          title: "KRAM",
+          backgroundImage: "Sponsors_Logo/Kram.png"
         },
         {
-          title: "Sponsor 6",
-          backgroundImage: "/sponsor6.jpg",
-          buttonText: "75 Pt.",
+          title: "Powerflex",
+          backgroundImage: "Sponsors_Logo/Powerflex.png"
         },
         {
-          title: "Sponsor 7",
-          backgroundImage: "/sponsor7.jpg",
-          buttonText: "75 Pt.",
+          title: "Isabellenhütte",
+          backgroundImage: "Sponsors_Logo/Isabellenhutte.png"
+        },
+        // Womag
+        {
+          title:"Demontweeks",
+          backgroundImage: "Sponsors_Logo/Demontweeks.png"
         },
         {
-          title: "Sponsor 8",
-          backgroundImage: "/sponsor8.jpg",
-          buttonText: "75 Pt.",
+          title:"Accu",
+          backgroundImage: "Sponsors_Logo/Accu.png"
         },
+        // Castalum
+        {
+          title:"Bicester Motion",
+          backgroundImage: "Sponsors_Logo/BicesterMotion.png"
+        },
+        // Easy Composite
       ];
 
   return (
@@ -67,6 +78,7 @@ export default function Home() {
                     key={index}
                     title={card.title}
                     backgroundImage={card.backgroundImage}
+                    isContain
                   />
                 </div>
               ))}
