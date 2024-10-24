@@ -8,9 +8,9 @@ export default function Home() {
       {/* Header Section */}
       <HeroSection
         backgroundUrl="landing.png"
-        title="YOUR DREAM IS OUR MOTIVATION"
+        title="WARWICK RACING"
         description="Having been open to students from all backgrounds since 2014, Warwick Racing has produced 7 generations of competitive internal-combustion engine cars. Finishing with the WR7 in 2018, the team shifted its overall focus to producing fully electric powered racers."
-        buttonText="FUTURE OF WARWICK RACING"
+        // buttonText="FUTURE OF WARWICK RACING"
       />
 
       {/* About Us Section */}

@@ -16,7 +16,9 @@ import {
   Business,
   BusinessOutline,
   Cash,
-  CashOutline
+  CashOutline,
+  CarSport,CarSportOutline,
+  Barbell,BarbellOutline
 } from "react-ionicons";
 import { Bebas_Neue } from "next/font/google";
 
@@ -32,17 +34,17 @@ export default function Home() {
     {
       title: "BUSINESS PLANNING",
       backgroundImage: "business_planning.jpg",
-      buttonText: "75 Pt.",
+      buttonText: "68.6 Pt.",
     },
     {
       title: "COST AND MANUFACTURING",
       backgroundImage: "cost_and_manufacturing.jpg",
-      buttonText: "100 Pt.",
+      buttonText: "100.6 Pt.",
     },
     {
       title: "ENGINEERING DESIGN",
       backgroundImage: "engineer_design.jpg",
-      buttonText: "150 Pt.",
+      buttonText: "87 Pt.",
     },
   ];
 
@@ -50,22 +52,22 @@ export default function Home() {
     {
       title: "ACCELERATIION",
       backgroundImage: "business_planning.jpg",
-      buttonText: "75 Pt.",
+      buttonText: "43.1 Pt.",
     },
     {
       title: "SKIDPAD",
       backgroundImage: "cost_and_manufacturing.jpg",
-      buttonText: "75 Pt.",
+      buttonText: "5.0 Pt.",
     },
     {
       title: "ENDURANCE",
       backgroundImage: "engineer_design.jpg",
-      buttonText: "325 Pt.",
+      buttonText: "6 Pt.",
     },
     {
       title: "EFFICIENCY",
       backgroundImage: "business_planning.jpg",
-      buttonText: "100 Pt.",
+      buttonText: "__ Pt.",
     },
   ];
 
@@ -84,6 +86,20 @@ export default function Home() {
       icon_active: Construct,
       icon_deactive: ConstructOutline,
     },
+    {
+      question: "Sprint",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      icon_active: CarSport,
+      icon_deactive: CarSportOutline
+    },
+    {
+      question: "Endurance",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      icon_active: Barbell,
+      icon_deactive: BarbellOutline
+    }
   ];
 
   const FAQStat = [
@@ -101,6 +117,22 @@ export default function Home() {
       icon_active: Cash,
       icon_deactive: CashOutline,
     },
+    // Deisgn
+    {
+      question: "Design",
+      answer:
+        "Engineering design is the process of creating a product or service. It involves identifying the resources and activities needed to create the product or service.",
+      icon_active: Business,
+      icon_deactive: BusinessOutline
+    },
+    // AI Business Plan
+    {
+      question: "AI Business Plan",
+      answer:
+        "AI Business Plan is the process of creating a plan to achieve a specific goal. It involves identifying the resources and activities needed to achieve the goal.",
+      icon_active: Cash,
+      icon_deactive: CashOutline
+    }
   ];
 
   return (
@@ -135,7 +167,7 @@ The winner is not necessarily the team with the fastest car, but the one with th
 
         <ContentSection
           id="Competition"
-          title={"THE COMPETITION"}
+          title={"COMPETITION RESULTS 2023-24"}
           textCenter
           noMargin
           backgroundUrl={"signup.png"}

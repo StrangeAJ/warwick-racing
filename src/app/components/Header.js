@@ -24,10 +24,10 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'Formula Student', path: '/formula_student' },
     { name: 'Cars', path: '/cars' },
-    { name: 'Media', path: '/media' },
-    { name: 'Our Sponsors', path: '/our_sponsors' },
     { name: 'Our Team', path: '/our_team' },
-    { name: 'Merchandise', path: '/merchandise' },
+    { name: 'Event', path: '/event' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Our Sponsors', path: '/our_sponsors' },
     { name: 'Contact Us', path: '/contact_us' },
   ];
 
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Green button aligned to the right */}
           <div className="mt-1 lg:mt-0">
             <GreenButton>
-              <p className="text-lg">THE UNIVERSITY OF WARWICK&apos;S FORMULA STUDENT TEAM</p>
+              <p className="text-lg">Download Newsletter</p>
             </GreenButton>
           </div>
         </nav>

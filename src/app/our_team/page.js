@@ -37,7 +37,7 @@ export default function Home() {
         {/* Hero Section */}
         <BannerSection backgroundImage="about_us.png" title="OUR TEAM" />
         
-        <div className="flex justify-center items-center flex-wrap">
+        {/* <div className="flex justify-center items-center flex-wrap">
               {teams.map((card, index) => (
                 <div key={card.id || card.uniqueIdentifier} className="w-1/3 mx-2">
                   <Card
@@ -48,7 +48,7 @@ export default function Home() {
                   />
                 </div>
               ))}
-        </div>
+        </div> */}
 
         <HeroSection
         backgroundUrl="car.jpg"
