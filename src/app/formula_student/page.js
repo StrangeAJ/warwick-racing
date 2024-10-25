@@ -210,15 +210,15 @@ The winner is not necessarily the team with the fastest car, but the one with th
             </div>
           </div>
         </ContentSection>
-        
-        <HeroSection
+        {/* Added Already in the Footer the same */}
+        {/* <HeroSection
           backgroundUrl="car.jpg"
           title="FOLLOW IN TO KNOW MORE"
           titleColor="[#43B02A]"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
           buttonText="REGISTER NOW FOR TOUR"
           contentCentered
-        />
+        /> */}
         
       </div>
     </>

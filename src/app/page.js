@@ -27,16 +27,6 @@ export default function Home() {
             backgroundSize: "contain"
           }} />
       </ContentSection>
-      {/* Sign Up Section */}
-      <HeroSection
-        backgroundUrl="signup.png"
-        title="FOLLOW US TO KNOW MORE"
-        titleColor="[#43B02A]" 
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
-        buttonText="Sign Up"
-        contentCentered
-      />
-
     </div>
   );
 }
