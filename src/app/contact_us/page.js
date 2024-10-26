@@ -18,7 +18,7 @@ export default function Home() {
         <>
             {/* Header Section */}
             <div className="flex-col overflow-x-hidden ">
-                <BannerSection backgroundImage="/landing.png" title="CONTACT US" />
+                <BannerSection backgroundImage="landing.jpg" title="CONTACT US" />
                 <div className="flex">
                     <div className="flex-col flex-1">
                         {/* Details */}

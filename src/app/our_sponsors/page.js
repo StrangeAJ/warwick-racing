@@ -153,7 +153,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="landing.png" title="SPONSORS" />
+        <BannerSection backgroundImage="landing.jpg" title="SPONSORS" />
 
         <div className="flex justify-center items-center flex-wrap">
           {/* make a Division titled Diamond Sponors with Font Bebas_Nue */}
