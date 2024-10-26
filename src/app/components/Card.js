@@ -5,11 +5,11 @@ const bebas_Neue = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
 });
-const Card = ({ title, backgroundImage, buttonText, imgTop, isContain}) => {
+const Card = ({ title, backgroundImage, buttonText, imgTop, isContain, isSponsor}) => {
   return (
     <div 
     // className={styles.card}
-    className={`relative flex flex-col justify-between m-3 h-72 overflow-hidden border-2 border-transparent rounded-lg text-center text-white transition border-opacity-0 hover:border-opacity-100`}
+    className={`relative flex flex-col justify-between m-3 h-72 overflow-hidden  rounded-lg text-center text-white ${ isSponsor ?  'transition border-opacity-0 hover:border-opacity-70  border-2 border-white':''}`}
     >
       
       <div

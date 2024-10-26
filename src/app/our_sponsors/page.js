@@ -189,11 +189,12 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Gold_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/3 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
                   isContain
+                  isSponsor
                 />
               </div>
             ))}
@@ -203,11 +204,12 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Silver_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/3 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/6 mx-2">
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
                   isContain
+                  isSponsor
                 />
               </div>
             ))}
@@ -217,11 +219,12 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Affiliate_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/3 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/7 mx-2">
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
                   isContain
+                  isSponsor
                 />
               </div>
             ))}
