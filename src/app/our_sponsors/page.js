@@ -49,15 +49,16 @@ export default function Home() {
       description:
         "Optimas is a global distributor of fasteners and c-class products.",
     },
-  ];
-
-  const Gold_sponsors = [
     {
       title: "Vector",
       backgroundImage: "Sponsors_Logo/Vector.png",
-      type: "Gold",
+      type: "Platinum",
       description: "Vector is a German-based automotive electronics company.",
     },
+  ];
+
+  const Gold_sponsors = [
+
     {
       title: "Eurocircuits",
       backgroundImage: "Sponsors_Logo/Eurocircuits.png",
