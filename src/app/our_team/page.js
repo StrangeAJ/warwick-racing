@@ -11,24 +11,58 @@ const bebas_Neue = Bebas_Neue({
 });
 
 export default function Home() {
-    const teams = [
+      const TechincalTeam = [
         {
-          title: "Operations",
-          backgroundImage: "Teams/operations.jpg"
+          name: "John Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Tech/John.jpg",
         },
         {
-          title: "Technical",
-          backgroundImage: "Teams/technical.jpg",
-        },
-        {
-          title: "Drivers",
-          backgroundImage: "Teams/drivers.jpg",
-        },
-        {
-            title:"Core",
-            backgroundImage:"Teams/core.jpg"
+          name: "Jane Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Tech/Jane.jpg",
         }
       ];
+    
+      const OperationsTeam = [
+        {
+          name: "John Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Operations/John.png",
+        },
+        {
+          name: "Jane Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Operations/Jane.png",
+        }
+      ];
+
+      const DriversTeam = [
+        {
+          name: "John Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Drivers/John.png",
+        },
+        {
+          name: "Jane Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Drivers/Jane.png",
+        }
+      ];
+
+      const CoreTeam = [
+        {
+          name: "John Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Core/John.png",
+        },
+        {
+          name: "Jane Doe",
+          title: "Team Leader",
+          backgroundImage: "Teams/Core/Jane.png",
+        }
+      ];
+
 
   return (
     <>
@@ -50,14 +84,28 @@ export default function Home() {
               ))}
         </div> */}
 
-        <HeroSection
-        backgroundUrl="car.jpg"
-        title="FOLLOW IN TO KNOW MORE"
-        titleColor="[#43B02A]" 
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
-        buttonText="REGISTER NOW FOR TOUR"
-        contentCentered
-      />
+        {/* Header for Team Name */}
+        <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          TECHNICAL TEAM
+        </h1>
+        <div className="flex justify-center items-center flex-wrap">
+          {TechincalTeam.map((card, index) => (
+            <div key={card.id || card.uniqueIdentifier} className="w-1/4 mx-2">
+              <Card
+                title={card.name}
+                backgroundImage={card.backgroundImage}
+                imgTop
+                // fullRounded
+              />
+               {/* title */}
+               <p className={`text-lg m-4 p-2 font-semibold text-center text-[#43B02A] ${bebas_Neue.className} `}>
+                {card.title}
+              </p>
+            </div>
+             
+          ))}
+          </div>
+
       </div>
     </>
   );
