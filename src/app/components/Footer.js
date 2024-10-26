@@ -6,11 +6,6 @@ import { LogoFacebook, LogoInstagram, LogoLinkedin,  LogoYoutube, LogoTiktok, } 
 
 const SocialMedia = [
   {
-    icon: LogoFacebook,
-    // color: '#3b5998',
-    url: 'https://www.facebook.com/WarwickRacing/',
-  },
-  {
     icon: LogoInstagram,
     // color: '#e4405f',
     url: 'https://www.instagram.com/warwickracing/',
