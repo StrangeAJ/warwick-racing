@@ -62,7 +62,7 @@ const Header = () => {
           {/* Green button aligned to the right */}
           <div className="mt-1 lg:mt-0">
             <GreenButton>
-              <p className="text-lg">Download Newsletter</p>
+              <p className="text-lg">Subcribe for Newsletter</p>
             </GreenButton>
           </div>
         </nav>
