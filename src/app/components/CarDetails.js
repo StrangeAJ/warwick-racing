@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
 import CarOverview from "./CarOverview";
 import CarSpecificationCard from "./CarSpecificationCard";
-import Image from "next/image";
 
 
 import {
@@ -134,15 +133,9 @@ const CarDetails = ({ car, reverse }) => {
             <h2 className={`text-4xl font-${bebas_neue}`}>Images</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
               {car.Images.map((image, index) => (
-                <Image
+                <img
                   key={index}
-                  src={"/"+image}
-                  width={0}
-                  height={0}
-                  style={{
-                    aspectRatio: "16/9",
-                    borderRadius: "1rem",
-                  }}
+                  src={image}
                   alt="car"
                   className="w-full h-64 object-cover rounded-lg"
                 />
