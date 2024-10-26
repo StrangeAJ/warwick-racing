@@ -15,7 +15,7 @@ export default function Home() {
                     images.map((image, index) => (
                         <img
                             key={index}
-                            src={image}
+                            src={"public"+image}
                             alt="car"
                             className="w-full h-64 object-cover rounded-lg"
                         />
