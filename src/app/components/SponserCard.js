@@ -1,5 +1,6 @@
 import React from 'react';
 import {Bebas_Neue} from 'next/font/google';
+import Image from 'next/image';
 
 const bebas_Neue = Bebas_Neue({
     subsets: ['latin'],
@@ -10,12 +11,13 @@ const SponserCard = ({ title, backgroundImage, description }) => {
     return (
         <div className="flex p-5 m-5 rounded-lg shadow-md border-white overflow-hidden border-2 border-transparent  text-white transition border-opacity-0 hover:border-opacity-100 ">
             <div className="justify-start m-2 p-2 w-1/3 h-auto ">
-                <dev
-                    src={backgroundImage}
+                <Image
+                    src={"/"+backgroundImage}
                     alt={title}
+                    layout="responsive"
+                    width={300}
+                    height={200}
                     style={{
-                        width: '100%',
-                        height: '100%',
                         objectFit: 'contain', // This will crop the image to fit the container
                     }}
                 />
