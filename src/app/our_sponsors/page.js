@@ -170,7 +170,8 @@ export default function Home() {
           ))}
 
           {/* make a Division titled Platinum Sponors with Font Bebas_Nue */}
-          <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
+          <h1 className={`text-6xl m-8 p-2 mt-20 font-semibold text-center text-white ${bebas_Neue.className} `}>
             PLATINUM SPONSORS
           </h1>
           {Platinum_sponsors.map((card, index) => (
@@ -184,7 +185,8 @@ export default function Home() {
           ))}
 
           {/* make a Division titled Gold Sponors with Font Bebas_Nue */}
-          <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
+          <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
             GOLD SPONSORS
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
@@ -199,7 +201,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+
+          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
+          <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
             SILVER SPONSORS
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
@@ -214,7 +218,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+
+          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
+          <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
             Affiliate SPONSORS
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">

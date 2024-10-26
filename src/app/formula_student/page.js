@@ -162,7 +162,7 @@ The winner is not necessarily the team with the fastest car, but the one with th
 
         <ContentSection
           id="Competition"
-          title={"COMPETITION RESULTS 2023-24"}
+          title={"FSUK 2024"}
           textCenter
           noMargin
           backgroundUrl={"signup.png"}
