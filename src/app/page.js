@@ -16,7 +16,7 @@ export default function Home() {
       {/* About Us Section */}
       <ContentSection
         hScreen
-        backgroundUrl="about_us.png"
+        // backgroundUrl="backlogo.png"
         title="ABOUT US"
         content="Having been open to students from all backgrounds since 2014, Warwick Racing has produced 7 generations of competitive internal-combustion engine cars. Finishing with the WR7 in 2018, the team shifted its focus to producing electric cars.">
         {/* add a background image */}

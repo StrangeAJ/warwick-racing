@@ -33,12 +33,12 @@ export default function Home() {
   const cardsStatics = [
     {
       title: "BUSINESS PLANNING",
-      backgroundImage: "business_planning.jpg",
+      backgroundImage: "Business_Planning.jpg",
       buttonText: "68.6 Pt.",
     },
     {
       title: "COST AND MANUFACTURING",
-      backgroundImage: "cost_and_manufacturing.jpg",
+      backgroundImage: "Cost_Manufacturing.jpg",
       buttonText: "100.6 Pt.",
     },
     {
@@ -51,24 +51,19 @@ export default function Home() {
   const cardsDynamics = [
     {
       title: "ACCELERATIION",
-      backgroundImage: "business_planning.jpg",
+      backgroundImage: "Acceleration.jpg",
       buttonText: "43.1 Pt.",
     },
     {
       title: "SKIDPAD",
-      backgroundImage: "cost_and_manufacturing.jpg",
+      backgroundImage: "Skidpad.jpg",
       buttonText: "5.0 Pt.",
     },
     {
       title: "ENDURANCE",
-      backgroundImage: "engineer_design.jpg",
+      backgroundImage: "Endurance.jpg",
       buttonText: "6 Pt.",
-    },
-    {
-      title: "EFFICIENCY",
-      backgroundImage: "business_planning.jpg",
-      buttonText: "__ Pt.",
-    },
+    }
   ];
 
   const FAQDyn = [
@@ -140,7 +135,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="landing.png" title="FORMULA STUDENT" />
+        <BannerSection backgroundImage="landing.jpg" title="FORMULA STUDENT" />
         <HeroSection
           id="About"
           title="ABOUT FORMULA STUDENT"
@@ -198,7 +193,7 @@ The winner is not necessarily the team with the fastest car, but the one with th
             </h1>
             <div className="flex justify-center items-center flex-wrap">
               {cardsDynamics.map((card, index) => (
-                <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+                <div key={card.id || card.uniqueIdentifier} className="w-1/4 mx-2">
                   <Card
                     key={index}
                     title={card.title}
