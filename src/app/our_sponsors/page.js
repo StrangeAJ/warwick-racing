@@ -233,7 +233,7 @@ export default function Home() {
         </div>
         <HeroSection
             backgroundUrl="car.jpg"
-            title="Interested in Sponsoring?"
+            title="Interested in Parterning with US?"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
             buttonText="Download Sponsorship Handbook"
             buttonLink={"https://acrobat.adobe.com/id/urn:aaid:sc:EU:8a7b0f6e-1b54-4998-816a-9d5612ecd68d"}
