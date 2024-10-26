@@ -13,14 +13,21 @@ export default function Home() {
   const Diamond_sponsors = [
     {
       title: "EPlan",
-      backgroundImage: "Sponsors_Logo/EPlan.png",
+      backgroundImage: "Sponsors_Logo/EPLAN.png",
       type: "Diamond",
       description:
         "EPlan is a German-based electrical engineering software company.",
     },
     {
+      title: "Open BOM",
+      backgroundImage: "Sponsors_Logo/Openbom.png",
+      type: "Diamond",
+      description:
+        "OpenBOM is a modern product lifecycle management and bill of materials management software for engineering teams.",
+    },
+    {
       title: "About Energy",
-      backgroundImage: "Sponsors_Logo/AboutEnergy.png",
+      backgroundImage: "Sponsors_Logo/About_Energy.png",
       type: "Diamond",
       description:
         "About Energy is a German-based electrical engineering software company.",
@@ -32,23 +39,16 @@ export default function Home() {
       description:
         "WMG is an academic department at the University of Warwick, providing research, education and knowledge transfer in engineering, manufacturing and technology.",
     },
-    {
-      title: "Open BOM",
-      backgroundImage: "Sponsors_Logo/Openbom.png",
-      type: "Diamond",
-      description:
-        "OpenBOM is a modern product lifecycle management and bill of materials management software for engineering teams.",
-    },
   ];
 
   const Platinum_sponsors = [
-    {
-      title: "Optimas",
-      backgroundImage: "Sponsors_Logo/Optimas.png",
-      type: "Platinum",
-      description:
-        "Optimas is a global distributor of fasteners and c-class products.",
-    },
+    // {
+    //   title: "Optimas",
+    //   backgroundImage: "Sponsors_Logo/Optimas.png",
+    //   type: "Platinum",
+    //   description:
+    //     "Optimas is a global distributor of fasteners and c-class products.",
+    // },
     {
       title: "Vector",
       backgroundImage: "Sponsors_Logo/Vector.png",
@@ -68,7 +68,7 @@ export default function Home() {
     },
     {
       title: "WR Composites",
-      backgroundImage: "Sponsors_Logo/WRComposites.png",
+      backgroundImage: "Sponsors_Logo/WR_Composites.png",
       type: "Gold",
       description:
         "WR Composites is a manufacturer of performance polyurethane suspension bushes.",
@@ -82,6 +82,12 @@ export default function Home() {
   ];
 
   const Silver_sponsors = [
+    {
+      title: "KRAM",
+      backgroundImage: "Sponsors_Logo/Kram.png",
+      type: "Silver",
+      description: "KRAM is a German-based automotive electronics company.",
+    },
     {
       title: "Powerflex",
       backgroundImage: "Sponsors_Logo/Powerflex.png",
@@ -110,6 +116,12 @@ export default function Home() {
       description: "Demon Tweeks is a retailer of performance car parts.",
     },
     {
+      title: "Proseat",
+      backgroundImage: "Sponsors_Logo/Proseat.png",
+      type: "Silver",
+      description: "Proseat is a manufacturer of performance polyurethane suspension bushes.",
+    },
+    {
       title: "Accu",
       backgroundImage: "Sponsors_Logo/Accu.png",
       type: "Silver",
@@ -117,31 +129,18 @@ export default function Home() {
         "Accu is a manufacturer of performance polyurethane suspension bushes.",
     },
     {
-      title: "Castalum",
-      backgroundImage: "Sponsors_Logo/Castalum.png",
-      type: "Silver",
-      description:
-        "Castalum is a manufacturer of performance polyurethane suspension bushes.",
-    },
-    {
       title: "Bicester Motion",
       backgroundImage: "Sponsors_Logo/BicesterMotion.png",
       type: "Silver",
       description:
         "Bicester Motion is a manufacturer of performance polyurethane suspension bushes.",
-    },
-    {
-      title: "KRAM",
-      backgroundImage: "Sponsors_Logo/Kram.png",
-      type: "Silver",
-      description: "KRAM is a German-based automotive electronics company.",
-    },
+    }
   ];
 
   const Affiliate_sponsors = [
     {
       title: "Easy Composite",
-      backgroundImage: "Sponsors_Logo/EasyComposite.png",
+      backgroundImage: "Sponsors_Logo/Easy_Composites.png",
       type: "Affiliate",
       description:
         "Easy Composites is a manufacturer of performance polyurethane suspension bushes.",
@@ -220,7 +219,7 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Affiliate_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/7 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
