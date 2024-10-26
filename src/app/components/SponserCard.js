@@ -20,7 +20,7 @@ const SponserCard = ({ title, backgroundImage, description }) => {
                     }}
                 />
             </div>
-            <div className="flex flex-col justify-end w-1/2 mx-2 justify-self-end align-middle">
+            <div className="flex flex-col justify-end w-1/2 mx-2 justify-self-end ">
                 <h2 className={`text-2xl font-semibold text-start text-[#43B02A] ${bebas_Neue.className} `}>{title}</h2>
                 <p className="text-start">{description}</p>
             </div>
