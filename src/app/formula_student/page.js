@@ -17,8 +17,8 @@ import {
   BusinessOutline,
   Cash,
   CashOutline,
-  CarSport,CarSportOutline,
-  Barbell,BarbellOutline
+  CarSport, CarSportOutline,
+  Barbell, BarbellOutline
 } from "react-ionicons";
 import { Bebas_Neue } from "next/font/google";
 
@@ -146,17 +146,21 @@ The winner is not necessarily the team with the fastest car, but the one with th
           contentCentered
         />
 
-        <div id="Dynamic Events" className="justify-items-center">
-          <h1 className={`text-4xl font-bold mx-6 mt-6 ${bebas_Neue.className}`}>
-            DYNAMIC EVENTS
-          </h1>
+        <div id="Dynamic Events" className="justify-items-center ">
+          <div id="DynamicEvents" className="flex justify-center items-center">
+            <h1 className={`text-4xl font-bold mx-6 mt-6 ${bebas_Neue.className}`}>
+              DYNAMIC EVENTS
+            </h1>
+          </div>
           <FAQ faqData={FAQDyn} />
         </div>
 
         <div id="Static Events" className="justify-items-center">
+        <div id="DynamicEvents" className="flex justify-center items-center">
           <h1 className={`text-4xl font-bold mx-6 mt-6 ${bebas_Neue.className}`}>
             STATIC EVENTS
           </h1>
+          </div>
           <FAQ faqData={FAQStat} />
         </div>
 
@@ -214,7 +218,7 @@ The winner is not necessarily the team with the fastest car, but the one with th
           buttonText="REGISTER NOW FOR TOUR"
           contentCentered
         /> */}
-        
+
       </div>
     </>
   );
