@@ -25,7 +25,7 @@ const Header = () => {
     { name: 'Formula Student', path: '/formula_student' },
     { name: 'Cars', path: '/cars' },
     { name: 'Our Team', path: '/our_team' },
-    { name: 'Event', path: '/event' },
+    { name: 'Events', path: '/events' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Our Sponsors', path: '/our_sponsors' },
     { name: 'Contact Us', path: '/contact_us' },

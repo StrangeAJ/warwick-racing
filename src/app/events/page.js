@@ -29,7 +29,7 @@ const news = [
 const EventPage = () => {
     return (
         <div className='flex-col'>
-            <HeroSection backgroundUrl={'about_us.png'} title={'Events'} contentCentered />
+            <HeroSection backgroundUrl={'Acceleration.jpg'} title={'Events'} contentCentered  imagePosition={'center'}/>
             <div className='flex-col'>
                 {news.map((newsItem, index) => (
                     <NewsComponent

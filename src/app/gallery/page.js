@@ -13,7 +13,7 @@ export default async function Home() {
 
     return (
         <div className='flex-col'>
-            <HeroSection backgroundUrl={'about_us.png'} title={'Gallery'} contentCentered />
+            <HeroSection backgroundUrl={'Gallery.jpg'} title={'Gallery'} contentCentered imagePosition={'center'} />
 
             {Object.keys(imagesByYear).length > 0 ? (
                 Object.keys(imagesByYear).map(year => (

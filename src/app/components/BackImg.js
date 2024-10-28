@@ -1,12 +1,12 @@
 import * as React from "react";
 
-const BackImg = ({ url }) => {
+const BackImg = ({ url, imagePosition }) => {
   return (
     <div
       className="absolute inset-0 w-full h-full "
       style={{
         backgroundImage: `url(${url})`,
-        backgroundPosition: "top",
+        backgroundPosition: `${imagePosition || "top"}`,
         backgroundSize: "cover", // Stretch the image to cover both width and height
         objectFit: "contain", // Ensures the image fills the container properly
         backgroundRepeat: "no-repeat",

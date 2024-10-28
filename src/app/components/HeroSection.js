@@ -17,7 +17,8 @@ const HeroSection = ({
   contentCentered,
   titleColor,
   socialMedia,
-  buttonLink
+  buttonLink,
+  imagePosition,
 }) => {
   return (
     <section
@@ -27,7 +28,7 @@ const HeroSection = ({
         } w-full h-screen`}
       style={{ overflow: "hidden" }}
     >
-      <BackImg url={backgroundUrl} />
+      <BackImg url={backgroundUrl} imagePosition={imagePosition} />
       <div className="relative max-w-4xl mx-6 px-8">
         <h1
           className={`text-8xl m-4 font-bold text-${titleColor} ${bebas_Neue.className}`}
