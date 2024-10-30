@@ -15,10 +15,7 @@ export default function Home() {
 
       {/* About Us Section */}
       <ContentSection
-        // hScreen
         hMax
-        // hFull
-        // backgroundUrl="backlogo.png"
         title="ABOUT US"
         content={``}>
         {/* add a background image */}
