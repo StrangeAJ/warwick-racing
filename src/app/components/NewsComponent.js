@@ -21,7 +21,7 @@ const NewsComponent = ({ title, date, description, imageUrl, isReverse }) => {
           style={{
             backgroundImage: `url(${imageUrl})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'top',
             zIndex: 0,
             border: '4px solid #43B02A'
           }}

@@ -28,12 +28,12 @@ export default function Home() {
         {
           name: "John Doe",
           title: "Team Leader",
-          backgroundImage: "Teams/Operations/John.png",
+          backgroundImage: "Teams/Operations/John.jpg",
         },
         {
           name: "Jane Doe",
           title: "Team Leader",
-          backgroundImage: "Teams/Operations/Jane.png",
+          backgroundImage: "Teams/Operations/Jane.jpg",
         }
       ];
 
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="flex-col overflow-x-hidden ">
         {/* Hero Section */}
-        <BannerSection backgroundImage="about_us.png" title="OUR TEAM" />
+        <BannerSection backgroundImage="Our_team.jpg" title="OUR TEAM" />
         
         {/* <div className="flex justify-center items-center flex-wrap">
               {teams.map((card, index) => (
@@ -90,7 +90,29 @@ export default function Home() {
         </h1>
         <div className="flex justify-center items-center flex-wrap">
           {TechincalTeam.map((card, index) => (
-            <div key={card.id || card.uniqueIdentifier} className="w-1/4 mx-2">
+            <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+              <Card
+                title={card.name}
+                backgroundImage={card.backgroundImage}
+                imgTop
+                // fullRounded
+              />
+               {/* title */}
+               <p className={`text-lg m-4 p-2 font-semibold text-center text-[#43B02A] ${bebas_Neue.className} `}>
+                {card.title}
+              </p>
+            </div>
+             
+          ))}
+          </div>
+
+          {/* Header for Team Name */}
+        <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          OPERATIONAL TEAM
+        </h1>
+          <div className="flex justify-center items-center flex-wrap">
+          {OperationsTeam.map((card, index) => (
+            <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
               <Card
                 title={card.name}
                 backgroundImage={card.backgroundImage}

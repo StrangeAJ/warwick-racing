@@ -30,13 +30,14 @@ const Footer = () => {
   return (
     <footer className=" text-white text-center">
       <HeroSection
-        backgroundUrl="signup.png"
+        backgroundUrl="Footer.jpg"
         title="FOLLOW US TO KNOW MORE"
         titleColor="[#43B02A]"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
+        description="Follow us on Social Media to stay in the loop with our latest projects, team progress and exclusive insights."
         // buttonText="Sign Up"
         socialMedia={SocialMedia}
         contentCentered
+        desFont={true}
       />
       <p className='p-5'>&copy; 2024 Warwick Racing. All rights reserved.</p>
     </footer>

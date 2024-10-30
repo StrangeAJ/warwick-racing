@@ -7,7 +7,7 @@ const bebas_Neue = Bebas_Neue({
   weight: ['400'],
 });
 
-const ContentSection = ({ backgroundUrl, title, content, children, textStart, textCenter, textFont, noMargin, hFull, hScreen, hMax }) => {
+const ContentSection = ({ backgroundUrl, title, content, children, textStart, textCenter, textFont, noMargin, hFull, hScreen, hMax}) => {
   return (
     <section
       className={`${textStart ? 'text-start' : textCenter ? 'text-center' : 'text-center'}

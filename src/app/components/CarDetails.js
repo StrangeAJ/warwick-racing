@@ -102,7 +102,7 @@ const CarDetails = ({ car, reverse }) => {
         reverse={reverse}
         handleDetailsClick={handleDetailsClick}
       />
-      {showDetails && (
+      {/* {showDetails && (
         <>
           <div className="mt-8 p-8 bg-gray-800 rounded-xl shadow-lg">
             <div className="flex justify-between items-center">
@@ -162,7 +162,7 @@ const CarDetails = ({ car, reverse }) => {
             </div>
           </div>
         </>
-      )}
+      )} */}
     </div>
   );
 };

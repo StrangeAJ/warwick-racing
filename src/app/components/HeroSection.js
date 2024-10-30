@@ -19,6 +19,9 @@ const HeroSection = ({
   socialMedia,
   buttonLink,
   imagePosition,
+  desFont,
+  desMargin,
+  frontPageSub
 }) => {
   return (
     <section
@@ -36,7 +39,9 @@ const HeroSection = ({
           {title}
         </h1>
         {description && (
-          <p className="text-lg text-white mt-4">{description}</p>
+          <p className={` text-white mt-4 ${desFont ? 'text-xl':'text-lg'}
+          ${frontPageSub?'mx-4':''}
+          `}>{description}</p>
         )}
         {socialMedia && (
           <div className="flex justify-center mt-4">

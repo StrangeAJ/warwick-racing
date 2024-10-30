@@ -39,6 +39,20 @@ export default function Home() {
       description:
         "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
     },
+    {
+      title: "Warwick School of Engineering",
+      backgroundImage: "Sponsors_Logo/WWSOE.png",
+      type: "Diamond",
+      description:
+        "The Warwick School of Engineering is a leading academic institution that offers undergraduate and postgraduate programs in engineering disciplines. With a focus on research and innovation, the school provides students with a comprehensive education in areas such as automotive engineering, manufacturing, and sustainable energy. By fostering collaboration between students, academics, and industry partners, the Warwick School of Engineering prepares graduates to address complex engineering challenges and drive technological advancements.",
+    },
+    {
+      title: "Catapult",
+      backgroundImage: "Sponsors_Logo/Catapult.png",
+      type: "Diamond",
+      description:
+        "Catapult is a network of technology and innovation centres that support businesses in developing new products and services. With a focus on key sectors such as manufacturing, digital technologies, and energy, Catapult provides access to expertise, facilities, and funding to drive innovation and growth. By connecting businesses with research institutions and industry partners, Catapult helps accelerate the development of cutting-edge technologies and solutions.",
+    }
   ];
 
   const Platinum_sponsors = [
@@ -239,7 +253,7 @@ export default function Home() {
         <HeroSection
             backgroundUrl="car.jpg"
             title="Interested in Parterning with US?"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
+            description="Partner with us to support the next generation of engineering talent and drive innovation in motorsport."
             buttonText="Download Sponsorship Handbook"
             buttonLink={"https://acrobat.adobe.com/id/urn:aaid:sc:EU:8a7b0f6e-1b54-4998-816a-9d5612ecd68d"}
             contentCentered

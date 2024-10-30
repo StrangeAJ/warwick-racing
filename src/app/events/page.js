@@ -4,32 +4,33 @@ import NewsComponent from '../components/NewsComponent';
 
 const news = [
     {
-        title: 'News 1 Title',
+        title: 'Formula Student South Africa',
         date: '2021-01-01',
         description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
-        imageUrl: 'car.jpg',
+        imageUrl: 'events/Event1.jpeg',
     },{
-        title: 'News 2 Title',
+        title: 'Advanced Engineering Show',
         date: '2021-01-01',
         description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
         imageUrl: 'cars.jpg',
-    },{
-        title: 'News 3 Title',
-        date: '2021-01-01',
-        description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
-        imageUrl: 'cost_and_manufacturing.jpg',
-    },{
-        title: 'News 4 Title',
-        date: '2021-01-01',
-        description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
-        imageUrl: 'cars.jpg',
-    }
+    },
+    // {
+    //     title: 'News 3 Title',
+    //     date: '2021-01-01',
+    //     description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
+    //     imageUrl: 'cost_and_manufacturing.jpg',
+    // },{
+    //     title: 'News 4 Title',
+    //     date: '2021-01-01',
+    //     description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
+    //     imageUrl: 'cars.jpg',
+    // }
 ];
 
 const EventPage = () => {
     return (
         <div className='flex-col'>
-            <HeroSection backgroundUrl={'Acceleration.jpg'} title={'Events'} contentCentered  imagePosition={'center'}/>
+            <HeroSection backgroundUrl={'Events.jpeg'} title={'Events'} contentCentered  imagePosition={'center'}/>
             <div className='flex-col'>
                 {news.map((newsItem, index) => (
                     <NewsComponent
