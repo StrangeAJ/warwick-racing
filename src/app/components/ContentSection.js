@@ -7,13 +7,14 @@ const bebas_Neue = Bebas_Neue({
   weight: ['400'],
 });
 
-const ContentSection = ({ backgroundUrl, title, content, children, textStart, textCenter, textFont, noMargin, hFull, hScreen }) => {
+const ContentSection = ({ backgroundUrl, title, content, children, textStart, textCenter, textFont, noMargin, hFull, hScreen, hMax }) => {
   return (
     <section
       className={`${textStart ? 'text-start' : textCenter ? 'text-center' : 'text-center'}
       ${textFont ? bebas_Neue.className : '' }
       ${noMargin ? '' : 'mb-1 py-20'}
       ${hFull ? 'h-full' : hScreen ? 'h-screen' : ''}
+      ${hMax ? 'h-[58rem]' : ''}  
       bg-center relative flex-1 w-full  items-center justify-center
       `}
       style={{ overflow: 'hidden' }}

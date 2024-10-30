@@ -16,28 +16,28 @@ export default function Home() {
       backgroundImage: "Sponsors_Logo/EPLAN.png",
       type: "Diamond",
       description:
-        "EPlan is a German-based electrical engineering software company.",
+        "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
     },
     {
       title: "Open BOM",
       backgroundImage: "Sponsors_Logo/Openbom.png",
       type: "Diamond",
       description:
-        "OpenBOM is a modern product lifecycle management and bill of materials management software for engineering teams.",
+        " OpenBOM is a cloud-based tool designed to streamline product data and bill of materials (BOM) management, ideal for engineers, manufacturers, and supply chain teams. It provides real-time collaboration on BOMs, inventory, and parts lists, integrating with popular CAD systems and enabling users to track revisions, costs, and quantities across projects. OpenBOM enhances visibility and efficiency in the product lifecycle, making it easier to manage data from design through manufacturing.",
     },
     {
       title: "About Energy",
       backgroundImage: "Sponsors_Logo/About_Energy.png",
       type: "Diamond",
       description:
-        "About Energy is a German-based electrical engineering software company.",
+        "About Energy specializes in advanced battery technology solutions, offering data-driven insights and tools to improve battery design, performance, and sustainability. Their platform supports industries such as automotive, aerospace, and energy storage by providing models, simulations, and a comprehensive battery cell library to optimize energy systems and streamline decision-making across the battery lifecycle.",
     },
     {
       title: "WMG",
       backgroundImage: "Sponsors_Logo/WMG.png",
       type: "Diamond",
       description:
-        "WMG is an academic department at the University of Warwick, providing research, education and knowledge transfer in engineering, manufacturing and technology.",
+        "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
     },
   ];
 
@@ -53,7 +53,7 @@ export default function Home() {
       title: "Vector",
       backgroundImage: "Sponsors_Logo/Vector.png",
       type: "Platinum",
-      description: "Vector is a German-based automotive electronics company.",
+      description: "Vector Informatik is a leading company specializing in software solutions and components for the automotive industry. Founded in 1988, it provides innovative tools that facilitate the development of automotive electronics, enabling efficient diagnostics, simulation automation, and project monitoring. Their offerings extend to sectors like aerospace and healthcare, reflecting a commitment to advancing technologies such as electromobility and autonomous driving. With over 4,500 employees worldwide, Vector plays a crucial role in supporting manufacturers and suppliers to enhance their development projects and bring cutting-edge products to market.",
     },
   ];
 

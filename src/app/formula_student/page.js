@@ -70,28 +70,28 @@ export default function Home() {
     {
       question: "Acceleration",
       answer:
-        "Acceleration is the rate at which a car increases its speed. It is measured in units of time and distance per second, or meters per second squared (m/s²).",
+        "A straight-line speed event where cars are tested over a 75-meter track to determine their rapid acceleration ability from a standstill, showing the car's raw power and control.",
       icon_active: Speedometer,
       icon_deactive: SpeedometerOutline,
     },
     {
-      question: "Skid Pad",
+      question: "Skidpad",
       answer:
-        "Skid pad is a type of road surface that is used to slow down a car. It is typically made of rubber or plastic and is used to prevent a car from skidding.",
+        "Teams demonstrate their car’s handling and cornering ability by driving in a figure-eight pattern, testing the vehicle's lateral grip and stability under controlled conditions.",
       icon_active: Construct,
       icon_deactive: ConstructOutline,
     },
     {
       question: "Sprint",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "A single-lap time trial on a track where cars are judged on speed and agility, with a focus on precision handling through varied turns.",
       icon_active: CarSport,
       icon_deactive: CarSportOutline
     },
     {
       question: "Endurance",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "The final and longest event, where cars must complete a specific distance on a circuit to assess reliability, fuel or battery efficiency, and overall durability over sustained performance conditions.",
       icon_active: Barbell,
       icon_deactive: BarbellOutline
     }
@@ -99,32 +99,30 @@ export default function Home() {
 
   const FAQStat = [
     {
-      question: "Business Planning",
+      question: "Design Presentation",
       answer:
-        "Business planning is the process of creating a plan to achieve a specific goal. It involves identifying the resources and activities needed to achieve the goal.",
+        "Teams showcase their car’s design, explaining engineering choices, innovation, and testing processes to judges, focusing on functionality, performance, and manufacturability",
       icon_active: Business,
       icon_deactive: BusinessOutline
     },
     {
-      question: "Cost and Manufacturing",
+      question: "Cost and Manufacturing Presentation",
       answer:
-        "Cost and manufacturing is the process of creating a product or service. It involves identifying the resources and activities needed to create the product or service.",
+        " Teams present a detailed budget breakdown and discuss the car’s production costs and manufacturing considerations.",
       icon_active: Cash,
       icon_deactive: CashOutline,
     },
-    // Deisgn
     {
-      question: "Design",
+      question: " EV Business Presentation",
       answer:
-        "Engineering design is the process of creating a product or service. It involves identifying the resources and activities needed to create the product or service.",
+        " Teams pitch their electric vehicle concept as a potential business venture, emphasizing market viability, target audience, unique value proposition, and business strategy.",
       icon_active: Business,
       icon_deactive: BusinessOutline
     },
-    // AI Business Plan
     {
-      question: "AI Business Plan",
+      question: "AI Business Presentation",
       answer:
-        "AI Business Plan is the process of creating a plan to achieve a specific goal. It involves identifying the resources and activities needed to achieve the goal.",
+        "Teams present their autonomous vehicle concept, addressing market relevance, potential applications, and a business model tailored to commercialize AI-driven solutions.",
       icon_active: Cash,
       icon_deactive: CashOutline
     }
@@ -156,10 +154,10 @@ The winner is not necessarily the team with the fastest car, but the one with th
         </div>
 
         <div id="Static Events" className="justify-items-center">
-        <div id="DynamicEvents" className="flex justify-center items-center">
-          <h1 className={`text-4xl font-bold mx-6 mt-6 ${bebas_Neue.className}`}>
-            STATIC EVENTS
-          </h1>
+          <div id="DynamicEvents" className="flex justify-center items-center">
+            <h1 className={`text-4xl font-bold mx-6 mt-6 ${bebas_Neue.className}`}>
+              STATIC EVENTS
+            </h1>
           </div>
           <FAQ faqData={FAQStat} />
         </div>
