@@ -25,7 +25,6 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create New Pull Request If Needed
-        if: steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v4
         with:
           title: Compressed Images Nightly
