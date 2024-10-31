@@ -25,8 +25,8 @@ const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 const sampleData = {
   carName: "WRE1",
-  descrptionText:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  // descrptionText:
+  //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   imageSrc: "cars.jpg",
   weight: "180 kg",
   weightIcon: Barbell,

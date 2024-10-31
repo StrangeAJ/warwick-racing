@@ -13,12 +13,12 @@ const bebas_Neue = Bebas_Neue({
 export default function Home() {
       const TechincalTeam = [
         {
-          name: "John Doe",
+          // name: "John Doe",
           title: "Team Leader",
           backgroundImage: "Teams/Tech/John.jpg",
         },
         {
-          name: "Jane Doe",
+          // name: "Jane Doe",
           title: "Team Leader",
           backgroundImage: "Teams/Tech/Jane.jpg",
         }
@@ -26,12 +26,12 @@ export default function Home() {
     
       const OperationsTeam = [
         {
-          name: "John Doe",
+          // name: "John Doe",
           title: "Team Leader",
           backgroundImage: "Teams/Operations/John.jpg",
         },
         {
-          name: "Jane Doe",
+          // name: "Jane Doe",
           title: "Team Leader",
           backgroundImage: "Teams/Operations/Jane.jpg",
         }
