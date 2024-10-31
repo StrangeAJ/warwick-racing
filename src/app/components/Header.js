@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import GreenButton from './GreenButton';
 import { Bebas_Neue } from "next/font/google";
 import Link from 'next/link';
