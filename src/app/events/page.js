@@ -5,13 +5,13 @@ import NewsComponent from '../components/NewsComponent';
 const news = [
     {
         title: 'Formula Student South Africa',
-        date: '2021-01-01',
-        // description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
+        date: 'February 2023',
+        description: 'Part of our team had the chance to travel to South Africa as part of the team’s previous collaboration with Formula Student Africa. There, they had the great opportunity to meet with the organisation and discuss various topics related to motorsport and Formula Student. The team participated in fundraising and visited Formula E on their Cape Town E-Prix.',
         imageUrl: 'events/Event1.jpeg',
     },{
         title: 'Advanced Engineering Show',
-        date: '2021-01-01',
-        // description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”',
+        date: 'October 2024',
+        description: 'Our team had the opportunity to showcase the WRe3 at the Advanced Engineering Show at the NEC in Birmingham on the 30th and 31st of October alongside the Southampton University Formula Student Racing Team. With the aim of presenting our innovations, sharing student projects, and talking to industry professionals at the event, the show proved to be a brilliant success.',
         imageUrl: 'cars.jpg',
     },
     // {
@@ -42,7 +42,7 @@ const EventPage = () => {
                         // isReverse={index % 2 === 0}
                     />
                 ))}
-                <ContentSection title='WE ARE ENSURING THE BEST CAR' content='“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”'
+                <ContentSection title='WE ARE ENSURING THE BEST CAR' content=' '
                 backgroundUrl={'media.jpg'} />
                 {/* Subscribe to News Letter */}
                 {/* <div className='flex justify-center p-4'>

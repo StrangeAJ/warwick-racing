@@ -32,55 +32,57 @@ const Header = () => {
   ];
 
   return (
-    <header className={`bg-black text-white p-3 ${bebas_Neue.className}`}>
-      <div className="flex justify-between items-center">
-        {/* Logo on the left */}
-        <div className="logo">
-          <div src="/logo.png" alt="Warwick Racing" 
-          style={{
-            backgroundImage: "url('logo.png')",
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100px",
-            height: "36px"
-          }}
-          />
-        </div>
-
-        {/* Navigation menu (centered on desktop) */}
-        <nav className={`flex-grow ${isMenuOpen ? 'block' : 'hidden'} lg:flex sm:justify-end`}>
-          <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 lg:justify-center flex-grow lg:mt-3">
-            {menuItems.map(({ name, path }) => (
-              <li key={name}>
-                <Link href={path} className={`hover:text-[#43B02A] text-lg ${pathname === path ? 'text-[#43B02A]' : ''}`}>
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          {/* Green button aligned to the right */}
-          <div className="mt-1 lg:mt-0">
-            <GreenButton>
-              <p className="text-lg">Subcribe to our Newsletter</p>
-            </GreenButton>
+      <header className={`bg-black text-white p-3 ${bebas_Neue.className}`}>
+        <div className="flex justify-between items-center">
+          {/* Logo on the left */}
+          <div className="logo">
+            <div src="/logo.png" alt="Warwick Racing"
+              style={{
+                backgroundImage: "url('logo.png')",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                width: "100px",
+                height: "36px"
+              }}
+            />
           </div>
-        </nav>
 
-        {/* Hamburger menu icon */}
-        <button className="lg:hidden" onClick={toggleMenu}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </header>
+          {/* Navigation menu (centered on desktop) */}
+          <nav className={`flex-grow ${isMenuOpen ? 'block' : 'hidden'} lg:flex sm:justify-end`}>
+            <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 lg:justify-center flex-grow lg:mt-3">
+              {menuItems.map(({ name, path }) => (
+                <li key={name}>
+                  <Link href={path} className={`hover:text-[#43B02A] text-lg ${pathname === path ? 'text-[#43B02A]' : ''}`}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* Green button aligned to the right */}
+            <div className="mt-1 lg:mt-0">
+              <GreenButton>
+                <a href={"https://warwick.us14.list-manage.com/subscribe/post?u=4967681a412e40b551310e7e3&amp;id=69c64507f7&amp;f_id=002bafe5f0"}>
+                <p className="text-lg">Subcribe to our Newsletter</p>
+                </a>
+              </GreenButton>
+            </div>
+          </nav>
+
+          {/* Hamburger menu icon */}
+          <button className="lg:hidden" onClick={toggleMenu}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </header>
   );
 };
 
