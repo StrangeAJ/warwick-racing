@@ -14,6 +14,14 @@ const news = [
         description: 'Our team had the opportunity to showcase the WRe3 at the Advanced Engineering Show at the NEC in Birmingham on the 30th and 31st of October alongside the Southampton University Formula Student Racing Team. With the aim of presenting our innovations, sharing student projects, and talking to industry professionals at the event, the show proved to be a brilliant success.',
         imageUrl: 'cars.jpg',
     },
+    {
+        title: '5-a-side football evening Girls on Track outreach event',
+        date: 'November 2024',
+    },
+    {
+        title: "Alumni seminar by Matt Stammers on 'Car Setup & Dynamics'",
+        date: 'November 2024',
+    }
     // {
     //     title: 'News 3 Title',
     //     date: '2021-01-01',
