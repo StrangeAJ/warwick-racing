@@ -6,10 +6,12 @@ const bebas_Neue = Bebas_Neue({
     weight: ['400'],
 });
 
-const SponserCard = ({ title, backgroundImage, description }) => {
+const SponserCard = ({ title, backgroundImage, description, invertCard }) => {
     return (
         <div className="flex p-5 m-5 rounded-lg shadow-md border-white overflow-hidden border-2 border-transparent  text-white transition border-opacity-0 hover:border-opacity-100 ">
-            <div className="justify-start m-2 p-2 w-1/3 h-auto ">
+            <div className={`justify-start m-2 p-2 w-1/3 h-auto 
+                ${invertCard ? 'invert' : ''}
+                `}>
             <img
                     src={backgroundImage}
                     alt={title}

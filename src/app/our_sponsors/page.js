@@ -13,10 +13,11 @@ export default function Home() {
   const Diamond_sponsors = [
     {
       title: "EPlan",
-      backgroundImage: "Sponsors_Logo/Eplan.jpeg",
+      backgroundImage: "Sponsors_Logo/Eplan.png",
       type: "Diamond",
       description:
         "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
+        invertCard: true
     },
     {
       title: "Open BOM",
@@ -180,6 +181,7 @@ export default function Home() {
                 title={card.title}
                 backgroundImage={card.backgroundImage}
                 description={card.description}
+                invertCard={card.invertCard?true:false}
               />
             </div>
           ))}
