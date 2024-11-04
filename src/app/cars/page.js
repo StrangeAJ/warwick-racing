@@ -85,8 +85,8 @@ const carData = [
     },
     {
         carName: "WRE2",
-        // descrptionText:
-        //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        descrptionText:
+            "The WRe2, Warwick Racing's second electric vehicle, represented a major step forward with a dual rear-motor powertrain for improved control in race conditions. Designed by a fourth-year team, it featured advancements in powertrain, suspension, and chassis, with traction control developed in Simulink, using Embed’s E400 Motor Controller. Former Chief Powertrain Engineer Rens Bossers highlights WRe2's enhanced reliability, setting the stage for future four-wheel-drive ambitions",
         imageSrc: "cars/Wre2.jpg",
         weight: "180 kg",
         weightIcon: Barbell,
@@ -149,8 +149,8 @@ const carData = [
     },
     {
         carName: "WRE3",
-        // descrptionText:
-        //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        descrptionText:
+            "The WRe3, Warwick Racing's third-generation electric Formula Student vehicle, was developed in just ten months. It features a custom-built 300V nominal battery and tractive system, delivering 80 kW to an Emrax 228 motor. Weighing 273 kg, the car is engineered with optimised suspension and dynamics for maximum performance. At Formula Student UK 2024, the WRe3 highlighted the team's engineering expertise, securing ninth place in the electric vehicle category and sixteenth overall.",
         imageSrc: "cars/Wre3.jpeg",
         weight: "180 kg",
         weightIcon: Barbell,

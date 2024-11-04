@@ -13,7 +13,7 @@ export default function Home() {
   const Diamond_sponsors = [
     {
       title: "EPlan",
-      backgroundImage: "Sponsors_Logo/EPLAN.png",
+      backgroundImage: "Sponsors_Logo/Eplan.jpeg",
       type: "Diamond",
       description:
         "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
@@ -141,6 +141,7 @@ export default function Home() {
       type: "Silver",
       description:
         "Accu is a manufacturer of performance polyurethane suspension bushes.",
+      website: "https://www.accu.co.uk/",
     },
     {
       title: "Bicester Motion",
@@ -222,7 +223,14 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Silver_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/6 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/6 mx-2" onClick={
+                // redirect to a card.website
+                () => {
+                  if (card.website) {
+                    window.open(card.website, "_blank");
+                  }
+
+                }}>
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
@@ -251,13 +259,13 @@ export default function Home() {
           </div>
         </div>
         <HeroSection
-            backgroundUrl="car.jpg"
-            title="Interested in Parterning with US?"
-            description="Partner with us to support the next generation of engineering talent and drive innovation in motorsport."
-            buttonText="Download Sponsorship Handbook"
-            buttonLink={"https://acrobat.adobe.com/id/urn:aaid:sc:EU:8a7b0f6e-1b54-4998-816a-9d5612ecd68d"}
-            contentCentered
-          />
+          backgroundUrl="car.jpg"
+          title="Interested in Parterning with US?"
+          description="Partner with us to support the next generation of engineering talent and drive innovation in motorsport."
+          buttonText="Download Sponsorship Handbook"
+          buttonLink={"https://acrobat.adobe.com/id/urn:aaid:sc:EU:8a7b0f6e-1b54-4998-816a-9d5612ecd68d"}
+          contentCentered
+        />
       </div>
     </>
   );
