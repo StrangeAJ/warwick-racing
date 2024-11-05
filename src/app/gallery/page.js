@@ -1,6 +1,9 @@
 import HeroSection from '../components/HeroSection';
 import { getImagesFromFolder } from './getImagesFromFolder'
 import { Bebas_Neue } from 'next/font/google';
+import { generateBlurDataURL } from './generateBlurDataURL';
+
+
 
 const bebas_Neue = Bebas_Neue({
     subsets: ["latin"],
@@ -25,6 +28,7 @@ export default async function Home() {
                                     key={index}
                                     src={image}
                                     alt="car"
+                                    placeholder={generateBlurDataURL(image)}
                                     className="w-full h-64 object-cover rounded-lg"
                                 />
                             ))}
