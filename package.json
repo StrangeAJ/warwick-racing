@@ -11,7 +11,6 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "mysql2": "^3.11.3",
-    "net": "^1.0.2",
     "next": "14.2.15",
     "plaiceholder": "^3.0.0",
     "react": "^18",

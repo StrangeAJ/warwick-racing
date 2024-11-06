@@ -2,7 +2,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { addNewContactMessage } from "./actions"; // Import the server action
 import { Bebas_Neue } from "next/font/google";
 import BannerSection from "../components/BannerSection";
 import {
@@ -59,21 +58,33 @@ export default function Home() {
 
     startTransition(async () => {
       setStatus({ loading: true, error: null, success: false });
-
+  
       try {
-        await addNewContactMessage(
-          formData.name,
-          formData.email,
-          formData.phone,
-          formData.message
-        );
-
-        setStatus({ loading: false, error: null, success: true });
-        setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form
+          const url = 'https://api.warwickracing.org/addContact.php';
+          const response = await fetch(url, {
+              method: 'POST',
+              body: JSON.stringify({
+                  name: formData.name,
+                  phone: formData.phone,
+                  email: formData.email,
+                  message: formData.message
+              }),
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+          });
+  
+          if (!response.ok) {
+              const errorData = await response.json();
+              throw new Error(errorData.error || 'Something went wrong');
+          }
+  
+          setStatus({ loading: false, error: null, success: true });
+          setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form
       } catch (error) {
-        setStatus({ loading: false, error: error.message, success: false });
+          setStatus({ loading: false, error: error.message, success: false });
       }
-    });
+  });
   };
 
   return (
