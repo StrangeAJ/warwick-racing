@@ -177,9 +177,9 @@ The winner is not necessarily the team with the fastest car, but the one with th
         >
           <div>
             {/* Overall Rank 16th and EV Rank 9th mention here*/}
-            <h1 className={`text-2xl font-bold  justify-items-center mx-6 -mt-6 mb-6 text-[#43B02A] `}>
+            <h1 className={`text-3xl font-bold  justify-items-center mx-6 -mt-5 mb-12 text-[#43B02A] hover:text-white `}>
               {" "}
-              Overall Rank 16th and EV Rank 9th
+              Overall Rank 16<sup>th</sup> and EV Rank 9<sup>th</sup>
             </h1>
             <h1 className="text-3xl font-bold  justify-items-center mx-6 mt-6">
               {" "}

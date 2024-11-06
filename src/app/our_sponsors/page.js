@@ -12,6 +12,13 @@ const bebas_Neue = Bebas_Neue({
 export default function Home() {
   const Diamond_sponsors = [
     {
+      title: "WMG",
+      backgroundImage: "Sponsors_Logo/WMG.png",
+      type: "Diamond",
+      description:
+        "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
+    },
+    {
       title: "EPlan",
       backgroundImage: "Sponsors_Logo/Eplan.png",
       type: "Diamond",
@@ -32,13 +39,6 @@ export default function Home() {
       type: "Diamond",
       description:
         "About Energy specializes in advanced battery technology solutions, offering data-driven insights and tools to improve battery design, performance, and sustainability. Their platform supports industries such as automotive, aerospace, and energy storage by providing models, simulations, and a comprehensive battery cell library to optimize energy systems and streamline decision-making across the battery lifecycle.",
-    },
-    {
-      title: "WMG",
-      backgroundImage: "Sponsors_Logo/WMG.png",
-      type: "Diamond",
-      description:
-        "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
     },
     {
       title: "Warwick School of Engineering",
