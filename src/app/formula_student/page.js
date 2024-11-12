@@ -38,12 +38,12 @@ export default function Home() {
     },
     {
       title: "DESIGN PRESENTATION",
-      backgroundImage: "Design_presentation.jpg",
+      backgroundImage: "Engineering_design.jpg",
       buttonText: "19th",
     },
     {
       title: "EV BUSINESS PRESENTATION",
-      backgroundImage: "Engineering_design.jpg",
+      backgroundImage: "Design_presentation.jpg",
       buttonText: "23rd",
     },
   ];

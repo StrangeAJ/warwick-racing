@@ -87,8 +87,8 @@ const EventPage = () => {
                         // isReverse={index % 2 === 0}
                     />
                 ))}
-                <ContentSection title='WE ARE ENSURING THE BEST CAR' content=' '
-                backgroundUrl={'media.jpg'} />
+                {/* <ContentSection title='WE ARE ENSURING THE BEST CAR' content=' '
+                backgroundUrl={'media.jpg'} /> */}
             </div>
         </div>
     );

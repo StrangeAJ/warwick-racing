@@ -1,11 +1,18 @@
 import HeroSection from './components/HeroSection';
 import ContentSection from './components/ContentSection';
 import Footer from './components/Footer';
+import GreenButton from './components/GreenButton';
 
 export default function Home() {
   return (
     <div className="flex-col overflow-x-hidden">
       {/* Header Section */}
+      {/* make the button center */}
+      <div className='flex justify-center items-center'>
+        <GreenButton>
+          <a href="https://movember.com">Donate to Movember</a>
+        </GreenButton>
+      </div>
       <HeroSection
         backgroundUrl="car.jpg"
         title="WARWICK RACING"
