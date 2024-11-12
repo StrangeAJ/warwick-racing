@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
 import CarOverview from "./CarOverview";
-import CarSpecificationCard from "./CarSpecificationCard";
 
 
 import {

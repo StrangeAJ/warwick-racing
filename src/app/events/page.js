@@ -1,10 +1,9 @@
 "use client";
 
-import { startTransition, useEffect } from 'react';
+import { startTransition, useEffect, useState } from 'react';
 import ContentSection from '../components/ContentSection';
 import HeroSection from '../components/HeroSection';
 import NewsComponent from '../components/NewsComponent';
-import { useState } from 'react';
 
 // const news = [
 //     {
@@ -49,28 +48,28 @@ const EventPage = () => {
     useEffect(() => {
         if (!initialized) {
             startTransition(async () => {
-                try{
-                const url = 'https://api.warwickracing.org/getEvents.php';
-                const response = await fetch(url,{
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
-                setNews2( await response.json());
-                 console.log(news2);
-                 if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error || 'Something went wrong');
+                try {
+                    const url = 'https://api.warwickracing.org/getEvents.php';
+                    const response = await fetch(url, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+                    const data = await response.json();
+                    setNews2(data);
+                    console.log(data);
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Something went wrong');
+                    }
+                } catch (error) {
+                    console.log(error);
                 }
-            } catch (error) {
-                console.log(error);
-            }
             });
             setInitialized(true);
         }
-    }
-    ,[initialized]);
+    }, []);
     
     return (
         <div className='flex-col'>
