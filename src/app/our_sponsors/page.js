@@ -19,14 +19,6 @@ export default function Home() {
         "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
     },
     {
-      title: "EPlan",
-      backgroundImage: "Sponsors_Logo/Eplan.png",
-      type: "Diamond",
-      description:
-        "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
-        invertCard: true
-    },
-    {
       title: "Open BOM",
       backgroundImage: "Sponsors_Logo/Openbom.png",
       type: "Diamond",
@@ -73,7 +65,14 @@ export default function Home() {
   ];
 
   const Gold_sponsors = [
-
+    {
+      title: "EPlan",
+      backgroundImage: "Sponsors_Logo/Eplan.png",
+      type: "Diamond",
+      description:
+        "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
+        invertCard: true
+    },
     {
       title: "Eurocircuits",
       backgroundImage: "Sponsors_Logo/Eurocircuits.png",
@@ -214,6 +213,7 @@ export default function Home() {
                   description={card.description}
                   isContain
                   isSponsor
+                  invertCard={card.invertCard?true:false}
                 />
               </div>
             ))}

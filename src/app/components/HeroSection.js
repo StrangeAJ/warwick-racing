@@ -21,14 +21,16 @@ const HeroSection = ({
   imagePosition,
   desFont,
   desMargin,
-  frontPageSub
+  frontPageSub,
+  children,
+  btnCenter,
 }) => {
   return (
     <section
       className={` bg-center py-20 relative mb-1 flex flex-col ${contentCentered
-          ? "items-center justify-center text-center"
-          : "items-start justify-start text-start"
-        } w-full h-screen`}
+          ? `items-center justify-center text-center`
+          : `items-start justify-start text-start`
+        } w-full h-screen `}
       style={{ overflow: "hidden" }}
     >
       <BackImg url={backgroundUrl} imagePosition={imagePosition} />
@@ -75,6 +77,9 @@ const HeroSection = ({
           </div>
         )}
         {buttonText && (
+          <div
+          className={`${btnCenter ? 'flex justify-center items-end w-screen mt-[40vh]' : ''}`}
+          >
           <GreenButton
             style={{ marginTop: "2rem", marginBottom: "2rem", ...buttonStyle }}
           >
@@ -82,8 +87,10 @@ const HeroSection = ({
             {buttonText}
             </a>
           </GreenButton>
+          </div>
         )}
       </div>
+      {children}
     </section>
   );
 };

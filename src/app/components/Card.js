@@ -5,7 +5,7 @@ const bebas_Neue = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
 });
-const Card = ({ title, backgroundImage, buttonText, imgTop, isContain, isSponsor, fullRounded}) => {
+const Card = ({ title, backgroundImage, buttonText, imgTop, isContain, isSponsor, fullRounded, invertCard}) => {
   return (
     <div 
     // className={styles.card}
@@ -17,7 +17,7 @@ const Card = ({ title, backgroundImage, buttonText, imgTop, isContain, isSponsor
         alt={title}
         layout="fill"
         objectPosition= {imgTop ? 'top' : 'center'}
-        className="absolute top-0 left-0 w-full h-full z-10 "
+        className={`absolute top-0 left-0 w-full h-full z-10     ${invertCard ? 'invert' : ''}`}
         style={{
             maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%)',
             maskSize: 'cover',

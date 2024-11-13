@@ -1,6 +1,5 @@
 import HeroSection from './components/HeroSection';
 import ContentSection from './components/ContentSection';
-import Footer from './components/Footer';
 import GreenButton from './components/GreenButton';
 
 export default function Home() {
@@ -9,9 +8,6 @@ export default function Home() {
       {/* Header Section */}
       {/* make the button center */}
       <div className='flex justify-center items-center'>
-        <GreenButton>
-          <a href="https://movember.com">Donate to Movember</a>
-        </GreenButton>
       </div>
       <HeroSection
         backgroundUrl="car.jpg"
@@ -21,6 +17,9 @@ export default function Home() {
       description="Warwick University's Formula Student Team"
       frontPageSub
       desFont
+      btnCenter
+      buttonLink="https://https://uk.movember.com/mospace/15330611?mc=1"
+      buttonText="DONATE TO MOVEMBER"
       />
 
       {/* About Us Section */}
