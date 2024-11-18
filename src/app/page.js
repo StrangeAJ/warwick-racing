@@ -18,7 +18,7 @@ export default function Home() {
       frontPageSub
       desFont
       btnCenter
-      buttonLink="https://https://uk.movember.com/mospace/15330611?mc=1"
+      buttonLink="https://uk.movember.com/mospace/15330611?mc=1&utm_medium=share&utm_source=dynamic&utm_campaign=copy-clipboard"
       buttonText="DONATE TO MOVEMBER"
       />
 

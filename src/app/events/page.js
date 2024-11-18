@@ -5,6 +5,21 @@ import ContentSection from '../components/ContentSection';
 import HeroSection from '../components/HeroSection';
 import NewsComponent from '../components/NewsComponent';
 
+const months ={
+    1: 'January',
+    2: 'February',
+    3: 'March',
+    4: 'April',
+    5: 'May',
+    6: 'June',
+    7: 'July',
+    8: 'August',
+    9: 'September',
+    10: 'October',
+    11: 'November',
+    12: 'December'
+}
+
 // const news = [
 //     {
 //         title: 'Formula Student South Africa',
@@ -81,7 +96,7 @@ const EventPage = () => {
                     <NewsComponent
                         key={index}
                         title={newsItem.title}
-                        date={newsItem.event_date.toLocaleString('en-US', { month: 'long', year : 'numeric' })}
+                        date={newsItem.event_date ? `${months[parseInt(newsItem.event_date.split('-')[1])]} ${newsItem.event_date.split('-')[0]}` : 'TBC'}
                         description={newsItem.description}
                         imageUrl={newsItem.image_url}
                         // isReverse={index % 2 === 0}
