@@ -119,7 +119,7 @@ export default function Home() {
       type: "Silver",
       description:
         "Powerflex is a manufacturer of performance polyurethane suspension bushes.",
-
+        website: "https://www.powerflex.co.uk/"
     },
     {
       title: "Isabellenhütte",
