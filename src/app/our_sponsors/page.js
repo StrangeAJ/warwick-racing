@@ -101,7 +101,7 @@ export default function Home() {
       backgroundImage: "Sponsors_Logo/RapidHarness.png",
       type: "Gold",
       description: "RapidHarness is a software for designing wire harnesses.",
-      webiste: "https://rapidharness.com/"
+      website: "https://rapidharness.com/"
     },
   ];
 
@@ -111,7 +111,7 @@ export default function Home() {
       backgroundImage: "Sponsors_Logo/Kram.png",
       type: "Silver",
       description: "KRAM is a German-based automotive electronics company.",
-      webiste: "https://kramsheetmetal.com/"
+      website: "https://kramsheetmetal.com/"
     },
     {
       title: "Powerflex",
@@ -193,7 +193,14 @@ export default function Home() {
             DIAMOND SPONSORS
           </h1>
           {Diamond_sponsors.map((card, index) => (
-            <div key={card.id || card.uniqueIdentifier} className="w-full mx-2">
+            <div key={card.id || card.uniqueIdentifier} className="w-full mx-2" onClick={
+              // redirect to a card.website
+              () => {
+                if (card.website) {
+                  window.open(card.website, "_blank");
+                }
+
+              }}>
               <SponserCard
                 title={card.title}
                 backgroundImage={card.backgroundImage}
@@ -209,7 +216,14 @@ export default function Home() {
             PLATINUM SPONSORS
           </h1>
           {Platinum_sponsors.map((card, index) => (
-            <div key={card.id || card.uniqueIdentifier} className="w-full mx-2">
+            <div key={card.id || card.uniqueIdentifier} className="w-full mx-2" onClick={
+              // redirect to a card.website
+              () => {
+                if (card.website) {
+                  window.open(card.website, "_blank");
+                }
+
+              }}>
               <SponserCard
                 title={card.title}
                 backgroundImage={card.backgroundImage}
@@ -225,7 +239,14 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Gold_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2" onClick={
+                // redirect to a card.website
+                () => {
+                  if (card.website) {
+                    window.open(card.website, "_blank");
+                  }
+
+                }}>
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
@@ -267,7 +288,14 @@ export default function Home() {
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
             {Affiliate_sponsors.map((card, index) => (
-              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+              <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2" onClick={
+                // redirect to a card.website
+                () => {
+                  if (card.website) {
+                    window.open(card.website, "_blank");
+                  }
+
+                }}>
                 <Card
                   backgroundImage={card.backgroundImage}
                   description={card.description}
