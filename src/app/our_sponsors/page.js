@@ -16,35 +16,40 @@ export default function Home() {
       backgroundImage: "Sponsors_Logo/WMG.png",
       type: "Diamond",
       description:
-        "WMG, part of the University of Warwick, is a leading research and education centre focused on advancing engineering, technology, and innovation. It specializes in high-value manufacturing and the automotive sector, providing expertise in areas such as digital technologies, materials, and energy. Through collaboration with industry partners, WMG drives research initiatives that enhance productivity and sustainability, making significant contributions to the UK's engineering sector.",
+        "WMG is a major research and education institution dedicated to promoting engineering, technology, and innovation. It is a part of the University of Warwick. It offers expertise in fields including digital technologies, materials, and energy and focuses on high-value manufacturing and the automotive industry. WMG makes major contributions to the engineering sector in the UK by advancing research efforts that improve sustainability and productivity through partnerships with industries.",
+        website: "https://warwick.ac.uk/fac/sci/wmg/"
     },
     {
       title: "Open BOM",
       backgroundImage: "Sponsors_Logo/Openbom.png",
       type: "Diamond",
       description:
-        " OpenBOM is a cloud-based tool designed to streamline product data and bill of materials (BOM) management, ideal for engineers, manufacturers, and supply chain teams. It provides real-time collaboration on BOMs, inventory, and parts lists, integrating with popular CAD systems and enabling users to track revisions, costs, and quantities across projects. OpenBOM enhances visibility and efficiency in the product lifecycle, making it easier to manage data from design through manufacturing.",
+        "For engineers, manufacturers, and supply chain teams, OpenBOM is a cloud-based platform that simplifies the management of product data and bill of materials (BOM). With its integration with well-known CAD systems, it facilitates real-time collaboration on BOMs, inventory, and parts lists while allowing users to monitor changes, expenses, and quantities throughout projects. OpenBOM facilitates data management from design to manufacturing, increasing visibility and efficiency throughout the product lifecycle.",
+        website: "https://www.openbom.com/"
     },
     {
       title: "About Energy",
       backgroundImage: "Sponsors_Logo/About_Energy.png",
       type: "Diamond",
       description:
-        "About Energy specializes in advanced battery technology solutions, offering data-driven insights and tools to improve battery design, performance, and sustainability. Their platform supports industries such as automotive, aerospace, and energy storage by providing models, simulations, and a comprehensive battery cell library to optimize energy systems and streamline decision-making across the battery lifecycle.",
+        "About Energy is an expert in innovative battery technology solutions, providing data-driven insights and instruments to enhance battery sustainability, performance, and design. By offering models, simulations, and an extensive battery cell library to optimise energy systems and improve decision-making across the battery lifecycle, their platform assists sectors like automotive, aerospace, and energy storage.",
+        website: "https://www.aboutenergy.io/"
     },
     {
       title: "Warwick School of Engineering",
       backgroundImage: "Sponsors_Logo/WWSOE.png",
       type: "Diamond",
       description:
-        "The Warwick School of Engineering is a leading academic institution that offers undergraduate and postgraduate programs in engineering disciplines. With a focus on research and innovation, the school provides students with a comprehensive education in areas such as automotive engineering, manufacturing, and sustainable energy. By fostering collaboration between students, academics, and industry partners, the Warwick School of Engineering prepares graduates to address complex engineering challenges and drive technological advancements.",
+        "The Warwick School of Engineering is a leading academic institution that provides undergraduate and postgraduate engineering degrees. The school offers students a thorough education in subjects including automotive, mechanical, electrical and electronics engineering, and much more, with an emphasis on research and innovation. The Warwick School of Engineering equips graduates to tackle challenging engineering problems and drive advancement in technology by encouraging cooperation among students, faculty, and industry partners.",
+        website: "https://warwick.ac.uk/fac/sci/eng/"
     },
     {
       title: "Catapult",
       backgroundImage: "Sponsors_Logo/Catapult.png",
       type: "Diamond",
       description:
-        "Catapult is a network of technology and innovation centres that support businesses in developing new products and services. With a focus on key sectors such as manufacturing, digital technologies, and energy, Catapult provides access to expertise, facilities, and funding to drive innovation and growth. By connecting businesses with research institutions and industry partners, Catapult helps accelerate the development of cutting-edge technologies and solutions.",
+        "Catapult is an innovation and technology centre network that helps companies create new products and services. Catapult offers access to expertise, facilities, and funding to encourage innovation and development, with an emphasis on important industries including manufacturing, digital technologies, and energy. Through its ability to link companies with academic institutions and industry partners, Catapult facilitates the rapid development of innovative technologies and solutions.",
+        website: "https://hvm.catapult.org.uk/"
     }
   ];
 
@@ -60,7 +65,8 @@ export default function Home() {
       title: "Vector",
       backgroundImage: "Sponsors_Logo/Vector.png",
       type: "Platinum",
-      description: "Vector Informatik is a leading company specializing in software solutions and components for the automotive industry. Founded in 1988, it provides innovative tools that facilitate the development of automotive electronics, enabling efficient diagnostics, simulation automation, and project monitoring. Their offerings extend to sectors like aerospace and healthcare, reflecting a commitment to advancing technologies such as electromobility and autonomous driving. With over 4,500 employees worldwide, Vector plays a crucial role in supporting manufacturers and suppliers to enhance their development projects and bring cutting-edge products to market.",
+      description: "Vector Informatik is a prominent provider of automotive software systems and components. Established in 1988, it offers innovative tools that support the advancement of automotive electronics, facilitating effective project monitoring, simulation automation, and diagnostics. Their services cover industries from healthcare to aerospace and automotive, demonstrating their dedication to developing cutting-edge technology like autonomous driving and electromobility. With more than 4,500 workers globally, Vector is essential in helping suppliers and manufacturers advance their research and development initiatives.",
+      website: "https://www.vector.com/int/en/products/solutions/software-defined-vehicle/"
     },
   ];
 
@@ -71,7 +77,8 @@ export default function Home() {
       type: "Diamond",
       description:
         "EPLAN provides software and services for electrical engineering, automation, and mechatronics, supporting industries such as manufacturing, plant construction, automotive, and more. Their platform helps streamline the design and documentation processes, offering a range of engineering solutions. With a focus on improving efficiency, EPLAN's tools enable businesses to create and manage complex engineering projects, enhancing collaboration across engineering disciplines.",
-        invertCard: true
+        invertCard: true,
+        website: "https://www.eplan.co.uk/"
     },
     {
       title: "Eurocircuits",
@@ -79,6 +86,7 @@ export default function Home() {
       type: "Gold",
       description:
         "Eurocircuits is a European manufacturer of prototype and small series PCBs.",
+        website: "https://www.eurocircuits.com/"
     },
     {
       title: "WR Composites",
@@ -86,12 +94,14 @@ export default function Home() {
       type: "Gold",
       description:
         "WR Composites is a manufacturer of performance polyurethane suspension bushes.",
+        website: "https://wrcomposites.co.uk/"
     },
     {
       title: "Rapid Harness",
       backgroundImage: "Sponsors_Logo/RapidHarness.png",
       type: "Gold",
       description: "RapidHarness is a software for designing wire harnesses.",
+      webiste: "https://rapidharness.com/"
     },
   ];
 
@@ -101,6 +111,7 @@ export default function Home() {
       backgroundImage: "Sponsors_Logo/Kram.png",
       type: "Silver",
       description: "KRAM is a German-based automotive electronics company.",
+      webiste: "https://kramsheetmetal.com/"
     },
     {
       title: "Powerflex",
@@ -108,6 +119,7 @@ export default function Home() {
       type: "Silver",
       description:
         "Powerflex is a manufacturer of performance polyurethane suspension bushes.",
+
     },
     {
       title: "Isabellenhütte",
@@ -115,6 +127,7 @@ export default function Home() {
       type: "Silver",
       description:
         "Isabellenhütte is a German manufacturer of electrical components.",
+        website: "https://www.isabellenhuette.de/en/"
     },
     {
       title: "Womag",
@@ -122,18 +135,21 @@ export default function Home() {
       type: "Silver",
       description:
         "Womag is a manufacturer of performance polyurethane suspension bushes.",
+        website: "https://www.womag.co.uk/"
     },
     {
       title: "Demontweeks",
       backgroundImage: "Sponsors_Logo/Demontweeks.png",
       type: "Silver",
       description: "Demon Tweeks is a retailer of performance car parts.",
+      website: "https://www.demon-tweeks.com/"
     },
     {
       title: "Proseat",
       backgroundImage: "Sponsors_Logo/Proseat.png",
       type: "Silver",
       description: "Proseat is a manufacturer of performance polyurethane suspension bushes.",
+      website: "https://www.proseat.co.uk/home"
     },
     {
       title: "Accu",
@@ -149,6 +165,7 @@ export default function Home() {
       type: "Silver",
       description:
         "Bicester Motion is a manufacturer of performance polyurethane suspension bushes.",
+        website: "https://bicestermotion.com/"
     }
   ];
 
@@ -159,6 +176,7 @@ export default function Home() {
       type: "Affiliate",
       description:
         "Easy Composites is a manufacturer of performance polyurethane suspension bushes.",
+        website: "https://www.easycomposites.co.uk/"
     },
   ];
 
