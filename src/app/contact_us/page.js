@@ -103,7 +103,7 @@ export default function Home() {
               <ContactInfo
                 item={{
                   icon: MailOutline,
-                  text: "warwick.racing@outlook.com",
+                  text: "info@warwick-racing.co.uk",
                 }}
               />
               <ContactInfo

@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Card from "../components/Card";
 import { Bebas_Neue } from "next/font/google";
 import SponserCard from "../components/SponserCard";
+import GreenButton from "../components/GreenButton";
 
 const bebas_Neue = Bebas_Neue({
   subsets: ["latin"],
@@ -313,7 +314,17 @@ export default function Home() {
           buttonText="Download Sponsorship Handbook"
           buttonLink={"https://acrobat.adobe.com/id/urn:aaid:sc:EU:8a7b0f6e-1b54-4998-816a-9d5612ecd68d"}
           contentCentered
-        />
+        >
+          {/* Title */}
+          <h1 className={`text-6xl font-semibold text-white text-center ${bebas_Neue.className} mt-6 `}>
+           CONTACT
+          </h1>
+          <GreenButton>
+            <a href="mailto:sponsorship@warwick-racing.co.uk">
+              sponsorship@warwick-racing.co.uk
+            </a>
+          </GreenButton>
+        </HeroSection>
       </div>
     </>
   );
