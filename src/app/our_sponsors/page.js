@@ -62,13 +62,6 @@ export default function Home() {
     //   description:
     //     "Optimas is a global distributor of fasteners and c-class products.",
     // },
-    {
-      title: "Vector",
-      backgroundImage: "Sponsors_Logo/Vector.png",
-      type: "Platinum",
-      description: "Vector Informatik is a prominent provider of automotive software systems and components. Established in 1988, it offers innovative tools that support the advancement of automotive electronics, facilitating effective project monitoring, simulation automation, and diagnostics. Their services cover industries from healthcare to aerospace and automotive, demonstrating their dedication to developing cutting-edge technology like autonomous driving and electromobility. With more than 4,500 workers globally, Vector is essential in helping suppliers and manufacturers advance their research and development initiatives.",
-      website: "https://www.vector.com/int/en/products/solutions/software-defined-vehicle/"
-    },
   ];
 
   const Gold_sponsors = [
@@ -90,13 +83,20 @@ export default function Home() {
         website: "https://www.eurocircuits.com/"
     },
     {
-      title: "WR Composites",
-      backgroundImage: "Sponsors_Logo/WR_Composites.png",
-      type: "Gold",
-      description:
-        "WR Composites is a manufacturer of performance polyurethane suspension bushes.",
-        website: "https://wrcomposites.co.uk/"
+      title: "Vector",
+      backgroundImage: "Sponsors_Logo/Vector.png",
+      type: "Platinum",
+      description: "Vector Informatik is a prominent provider of automotive software systems and components. Established in 1988, it offers innovative tools that support the advancement of automotive electronics, facilitating effective project monitoring, simulation automation, and diagnostics. Their services cover industries from healthcare to aerospace and automotive, demonstrating their dedication to developing cutting-edge technology like autonomous driving and electromobility. With more than 4,500 workers globally, Vector is essential in helping suppliers and manufacturers advance their research and development initiatives.",
+      website: "https://www.vector.com/int/en/products/solutions/software-defined-vehicle/"
     },
+    // {
+    //   title: "WR Composites",
+    //   backgroundImage: "Sponsors_Logo/WR_Composites.png",
+    //   type: "Gold",
+    //   description:
+    //     "WR Composites is a manufacturer of performance polyurethane suspension bushes.",
+    //     website: "https://wrcomposites.co.uk/"
+    // },
     {
       title: "Rapid Harness",
       backgroundImage: "Sponsors_Logo/RapidHarness.png",
@@ -167,10 +167,7 @@ export default function Home() {
       description:
         "Bicester Motion is a manufacturer of performance polyurethane suspension bushes.",
         website: "https://bicestermotion.com/"
-    }
-  ];
-
-  const Affiliate_sponsors = [
+    },
     {
       title: "Easy Composite",
       backgroundImage: "Sponsors_Logo/Easy_Composites.png",
@@ -179,6 +176,17 @@ export default function Home() {
         "Easy Composites is a manufacturer of performance polyurethane suspension bushes.",
         website: "https://www.easycomposites.co.uk/"
     },
+  ];
+
+  const Affiliate_sponsors = [
+    // {
+    //   title: "Easy Composite",
+    //   backgroundImage: "Sponsors_Logo/Easy_Composites.png",
+    //   type: "Affiliate",
+    //   description:
+    //     "Easy Composites is a manufacturer of performance polyurethane suspension bushes.",
+    //     website: "https://www.easycomposites.co.uk/"
+    // },
   ];
 
   return (
@@ -212,8 +220,8 @@ export default function Home() {
           ))}
 
           {/* make a Division titled Platinum Sponors with Font Bebas_Nue */}
-          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
-          <h1 className={`text-6xl m-8 p-2 mt-20 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          {/* <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " /> */}
+          {/* <h1 className={`text-6xl m-8 p-2 mt-20 font-semibold text-center text-white ${bebas_Neue.className} `}>
             PLATINUM SPONSORS
           </h1>
           {Platinum_sponsors.map((card, index) => (
@@ -231,7 +239,7 @@ export default function Home() {
                 description={card.description}
               />
             </div>
-          ))}
+          ))} */}
 
           {/* make a Division titled Gold Sponors with Font Bebas_Nue */}
           <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
@@ -259,6 +267,7 @@ export default function Home() {
             ))}
           </div>
 
+          {/* make a Division titled Silver Sponors with Font Bebas_Nue */}
           <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
           <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
             SILVER SPONSORS
@@ -283,8 +292,9 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " />
-          <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          {/* make a Division titled Affiliate Sponors with Font Bebas_Nue */}
+          {/* <div className="w-[90%] h-1 mt-10 bg-white rounded-3xl " /> */}
+          {/* <h1 className={`text-6xl m-8 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
             Affiliate SPONSORS
           </h1>
           <div className="flex justify-center items-center flex-wrap w-full">
@@ -305,7 +315,7 @@ export default function Home() {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         <HeroSection
           backgroundUrl="car.jpg"

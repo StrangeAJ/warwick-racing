@@ -39,7 +39,7 @@ const Footer = () => {
         contentCentered
         desFont={true}
       />
-      <p className='p-5'>&copy; 2024 Warwick Racing. All rights reserved.</p>
+      <p className='p-5'>&copy; 2025 Warwick Racing. All rights reserved.</p>
     </footer>
   );
 };
