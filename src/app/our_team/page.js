@@ -13,54 +13,127 @@ const bebas_Neue = Bebas_Neue({
 export default function Home() {
       const TechincalTeam = [
         {
-          // name: "John Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Tech/John.jpg",
+          name: "Sukhdev Ahluwalia",
+          title: "Chassis",
+          backgroundImage: "Teams/Tech/Sukhdev.jpeg",
         },
         {
-          // name: "Jane Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Tech/Jane.jpg",
+          name: "Aryan Karnik",
+          title: "Suspension",
+          backgroundImage: "Teams/User.jpg",
+        },
+        {
+          name: "Eric Rossi",
+          title: "Vehicle Dynamics",
+          backgroundImage: "Teams/Tech/Eric.jpeg",
+        },
+        {
+          name: "Seb Feakes",
+          title: "Drivetrain",
+          backgroundImage: "Teams/User.jpg",
+        },
+        {
+          name: "Will Canning",
+          title: "Electrical",
+          backgroundImage: "Teams/Tech/Will.jpeg",
+        },
+        {
+          name: "Aiden Smith",
+          title: "Battery",
+          backgroundImage: "Teams/Tech/Aiden.jpeg",
+        },
+        {
+          name: "Freddie Stephens",
+          title: "FEA",
+          backgroundImage: "Teams/Tech/Freddie.jpeg",
+        },
+        {
+          name: "Joshua Jose",
+          title: "Control Systems",
+          backgroundImage: "Teams/Tech/Joshua.jpeg",
+        },
+        {
+          name: "Ben Roberts",
+          title: "Vehicle Performance",
+          backgroundImage: "Teams/Tech/Ben.jpeg",
+        },  
+        {
+          name: "Freddie Stephens",
+          title: "CAD & PLM",
+          backgroundImage: "Teams/Tech/Freddie.jpeg",
+        },
+        {
+          name: "Daisy Lovell",
+          title: "Trackside Operations",
+          backgroundImage: "Teams/Tech/Daisy.jpeg",
+        },
+        {
+          name: "Mohamed Khalid Mohamed Elsheikh",
+          title: "Workshop Manager",
+          backgroundImage: "Teams/User.jpg",
         }
       ];
     
       const OperationsTeam = [
+        /* Media, Communications & Events - Kareena Gopwani Mahtani 
+Procurement - Abhi Koria 
+HR - Omkar Maruti Gavali Sponsorships & Partnerships - Hashim Sheikh */
         {
-          // name: "John Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Operations/John.jpg",
+          name: "Kareena Gopwani Mahtani",
+          title: "Media, Communications & Events",
+          backgroundImage: "Teams/Operations/Kareena.jpeg",
         },
         {
-          // name: "Jane Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Operations/Jane.jpg",
+          name: "Abhi Koria",
+          title: "Procurement",
+          backgroundImage: "Teams/Operations/Abhi.jpeg",
+        },
+        {
+          name: "Omkar Maruti Gavali",
+          title: "HR",
+          backgroundImage: "Teams/User.jpg",
+        },
+        {
+          name: "Hashim Sheikh",
+          title: "Sponsorships & Partnerships",
+          backgroundImage: "Teams/User.jpg",
         }
       ];
 
-      const DriversTeam = [
-        {
-          name: "John Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Drivers/John.png",
-        },
-        {
-          name: "Jane Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Drivers/Jane.png",
-        }
-      ];
+      // const DriversTeam = [
+      //   {
+      //     name: "John Doe",
+      //     title: "Team Leader",
+      //     backgroundImage: "Teams/Drivers/John.png",
+      //   },
+      //   {
+      //     name: "Jane Doe",
+      //     title: "Team Leader",
+      //     backgroundImage: "Teams/Drivers/Jane.png",
+      //   }
+      // ];
 
       const CoreTeam = [
         {
-          name: "John Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Core/John.png",
+          name: "Madeleine Pomroy",
+          title: "Team Principal",
+          backgroundImage: "Teams/Core/Madeleine.jpeg",
         },
         {
-          name: "Jane Doe",
-          title: "Team Leader",
-          backgroundImage: "Teams/Core/Jane.png",
-        }
+          name: "Aiden Smith",
+          title: "Technical Director",
+          backgroundImage: "Teams/Core/Aiden.jpeg",
+        },
+        {
+          name: "Freddie Stephens",
+          title: "Project Manager",
+          backgroundImage: "Teams/Core/Freddie.jpeg",
+        },
+        {
+          name: "Kareena Gopwani Mahtani",
+          title: "COO",
+          backgroundImage: "Teams/Core/Kareena.jpeg",
+        },
       ];
 
 
@@ -86,15 +159,14 @@ export default function Home() {
 
         {/* Header for Team Name */}
         <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
-          TECHNICAL TEAM
+          CORE TEAM
         </h1>
         <div className="flex justify-center items-center flex-wrap">
-          {TechincalTeam.map((card, index) => (
-            <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+          {CoreTeam.map((card, index) => (
+            <div key={card.id || card.uniqueIdentifier} className="xl:w-1/5 mx-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
               <Card
                 title={card.name}
                 backgroundImage={card.backgroundImage}
-                imgTop
                 // fullRounded
               />
                {/* title */}
@@ -108,15 +180,15 @@ export default function Home() {
 
           {/* Header for Team Name */}
         <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
-          OPERATIONAL TEAM
+          TECHNICAL TEAM
         </h1>
           <div className="flex justify-center items-center flex-wrap">
-          {OperationsTeam.map((card, index) => (
-            <div key={card.id || card.uniqueIdentifier} className="w-1/5 mx-2">
+          {TechincalTeam.map((card, index) => (
+            <div key={card.id || card.uniqueIdentifier} className="xl:w-1/5 mx-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
               <Card
                 title={card.name}
                 backgroundImage={card.backgroundImage}
-                imgTop
+                // imgTo  p
                 // fullRounded
               />
                {/* title */}
@@ -128,6 +200,27 @@ export default function Home() {
           ))}
           </div>
 
+          {/* Header for Team Name */}
+          <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
+          OPERATIONS TEAM
+        </h1>
+          <div className="flex justify-center items-center flex-wrap">
+          {OperationsTeam.map((card, index) => (
+            <div key={card.id || card.uniqueIdentifier} className="xl:w-1/5 mx-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
+              <Card
+                title={card.name}
+                backgroundImage={card.backgroundImage}
+                // imgTo  p
+                // fullRounded
+              />
+               {/* title */}
+               <p className={`text-lg m-4 p-2 font-semibold text-center text-[#43B02A] ${bebas_Neue.className} `}>
+                {card.title}
+              </p>
+            </div>
+             
+          ))}
+          </div>
       </div>
     </>
   );
