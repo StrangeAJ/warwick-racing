@@ -97,12 +97,6 @@ export default function Home() {
     //     "WR Composites is a manufacturer of performance polyurethane suspension bushes.",
     //     website: "https://wrcomposites.co.uk/"
     // },
-      title: "Vector",
-      backgroundImage: "Sponsors_Logo/Vector.png",
-      type: "Platinum",
-      description: "Vector Informatik is a prominent provider of automotive software systems and components. Established in 1988, it offers innovative tools that support the advancement of automotive electronics, facilitating effective project monitoring, simulation automation, and diagnostics. Their services cover industries from healthcare to aerospace and automotive, demonstrating their dedication to developing cutting-edge technology like autonomous driving and electromobility. With more than 4,500 workers globally, Vector is essential in helping suppliers and manufacturers advance their research and development initiatives.",
-      website: "https://www.vector.com/int/en/products/solutions/software-defined-vehicle/"
-    },
     // {
     //   title: "WR Composites",
     //   backgroundImage: "Sponsors_Logo/WR_Composites.png",
@@ -181,7 +175,6 @@ export default function Home() {
       description:
         "Bicester Motion is a manufacturer of performance polyurethane suspension bushes.",
         website: "https://bicestermotion.com/"
-    },
     },
     {
       title: "Easy Composite",
