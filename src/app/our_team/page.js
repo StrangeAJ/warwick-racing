@@ -20,7 +20,7 @@ export default function Home() {
         {
           name: "Aryan Karnik",
           title: "Suspension",
-          backgroundImage: "Teams/User.jpg",
+          backgroundImage: "Teams/Tech/Aryan.jpeg",
         },
         {
           name: "Eric Rossi",
@@ -28,9 +28,9 @@ export default function Home() {
           backgroundImage: "Teams/Tech/Eric.jpeg",
         },
         {
-          name: "Seb Feakes",
+          name: "Sebastian Feakes",
           title: "Drivetrain",
-          backgroundImage: "Teams/User.jpg",
+          backgroundImage: "Teams/Tech/Sebastian.jpeg",
         },
         {
           name: "Will Canning",
@@ -43,7 +43,7 @@ export default function Home() {
           backgroundImage: "Teams/Tech/Aiden.jpeg",
         },
         {
-          name: "Freddie Stephens",
+          name: "Fredrick Stephens",
           title: "FEA",
           backgroundImage: "Teams/Tech/Freddie.jpeg",
         },
@@ -58,7 +58,7 @@ export default function Home() {
           backgroundImage: "Teams/Tech/Ben.jpeg",
         },  
         {
-          name: "Freddie Stephens",
+          name: "Fredrick Stephens",
           title: "CAD & PLM",
           backgroundImage: "Teams/Tech/Freddie.jpeg",
         },
@@ -70,6 +70,11 @@ export default function Home() {
         {
           name: "Mohamed Khalid Mohamed Elsheikh",
           title: "Workshop Manager",
+          backgroundImage: "Teams/Tech/Mohamed.jpeg",
+        },
+        {
+          // name: "Mohamed Khalid Mohamed Elsheikh",
+          title: "AI DDT",
           backgroundImage: "Teams/User.jpg",
         }
       ];
@@ -80,7 +85,7 @@ Procurement - Abhi Koria
 HR - Omkar Maruti Gavali Sponsorships & Partnerships - Hashim Sheikh */
         {
           name: "Kareena Gopwani Mahtani",
-          title: "Media, Communications & Events",
+          title: "Marketing, Communications & Events",
           backgroundImage: "Teams/Operations/Kareena.jpeg",
         },
         {
@@ -90,13 +95,13 @@ HR - Omkar Maruti Gavali Sponsorships & Partnerships - Hashim Sheikh */
         },
         {
           name: "Omkar Maruti Gavali",
-          title: "HR",
-          backgroundImage: "Teams/User.jpg",
+          title: "Human resources",
+          backgroundImage: "Teams/Operations/Omkar.jpeg",
         },
         {
           name: "Hashim Sheikh",
           title: "Sponsorships & Partnerships",
-          backgroundImage: "Teams/User.jpg",
+          backgroundImage: "Teams/Operations/Hashim.jpeg",
         }
       ];
 
@@ -125,13 +130,13 @@ HR - Omkar Maruti Gavali Sponsorships & Partnerships - Hashim Sheikh */
           backgroundImage: "Teams/Core/Aiden.jpeg",
         },
         {
-          name: "Freddie Stephens",
+          name: "Fredrick Stephens",
           title: "Project Manager",
           backgroundImage: "Teams/Core/Freddie.jpeg",
         },
         {
           name: "Kareena Gopwani Mahtani",
-          title: "COO",
+          title: "Chief Operating Officer",
           backgroundImage: "Teams/Core/Kareena.jpeg",
         },
       ];
@@ -159,7 +164,7 @@ HR - Omkar Maruti Gavali Sponsorships & Partnerships - Hashim Sheikh */
 
         {/* Header for Team Name */}
         <h1 className={`text-6xl m-4 p-2 font-semibold text-center text-white ${bebas_Neue.className} `}>
-          CORE TEAM
+        MANAGEMENT TEAM
         </h1>
         <div className="flex justify-center items-center flex-wrap">
           {CoreTeam.map((card, index) => (
